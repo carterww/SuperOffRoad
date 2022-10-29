@@ -11,12 +11,12 @@ public abstract class TruckController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        implementation.Start();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        implementation.Update();
     }
 }
