@@ -10,6 +10,9 @@ public class TruckController : MonoBehaviour
     // Need to implement factory method here to choose
     // Hard coded variable for testing
     TruckControllerImp implementation = new PlayerTruckController();
+    public void SetController(TruckControllerImp c) {
+        this.implementation = c;
+    }
 
     // Physics variables, will need fine tuning
     Vector2 facing = new Vector2(1, 0);

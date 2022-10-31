@@ -9,6 +9,8 @@ public class PlayerTruckController : TruckControllerImp
     bool inputKeyLeft;
     bool inputKeyRight;
     float inputDirection;
+
+    public PlayerTruckController() {}
     
     // Start is called before the first frame update
     public override void Start()
