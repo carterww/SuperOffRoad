@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// TODO: Flip downhill animation for going up hill through a function
+
 // Attached to Truck object
 public class TruckController : MonoBehaviour
 {
