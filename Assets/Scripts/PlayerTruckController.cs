@@ -22,6 +22,7 @@ public class PlayerTruckController : TruckControllerImp
     // Update is called once per frame
     public override void Update()
     {
+        // TODO Could an else statement be used for each GetKeyUp since it is binary?
         if (Input.GetKeyDown(KeyCode.W)) inputThrottle = true;
         if (Input.GetKeyUp(KeyCode.W)) inputThrottle = false;
         if (Input.GetKeyDown(KeyCode.A)) inputKeyLeft = true;
