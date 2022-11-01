@@ -7,15 +7,19 @@ using UnityEngine;
 // Attached to Truck object
 public class TruckController : MonoBehaviour
 {
+
+     Animator animator;
+
     // Need to implement factory method here to choose
     // Hard coded variable for testing
+
     TruckControllerImp implementation = new PlayerTruckController();
     public void SetController(TruckControllerImp c) {
         this.implementation = c;
     }
 
     // Physics variables, will need fine tuning
-    Vector2 facing = new Vector2(1, 0);
+    Vector2 facing = new Vector2(-1, 0);
     Vector2 velocity = new Vector2();
     float frictionCoeff = 2.5f;
     float maxSpeed = 3f;
@@ -25,6 +29,8 @@ public class TruckController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
+        animator.SetFloat("X", -1.0f); animator.SetFloat("Y", 0.0f);
         implementation.Start();
     }
 
@@ -69,6 +75,8 @@ public class TruckController : MonoBehaviour
         if (!Mathf.Approximately(velocity.magnitude, 0.0f))
         {
             facing = velocity.normalized;
+            animator.SetFloat("X", facing.x);
+            animator.SetFloat("Y", facing.y);
         }
     }
 }

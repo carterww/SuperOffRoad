@@ -9,7 +9,7 @@ public class Scoreboard : MonoBehaviour
 
     public float RaceTime
     {
-        get { return Time; }
+        get { return RaceTime; }
         set
         {
             RaceTime = value;
@@ -19,7 +19,7 @@ public class Scoreboard : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.Time = 0f;
+        this.RaceTime = 0f;
     }
 
     // Update is called once per frame

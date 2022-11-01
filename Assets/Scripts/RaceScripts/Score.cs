@@ -10,11 +10,11 @@ public class Score
 
     public float GetTime() { return time; }
 
-    public float SetTime(float t) { this.time = t; }
+    public void SetTime(float t) { this.time = t; }
 
-    public float GetTruck() { return truck; }
+    public GameObject GetTruck() { return truck; }
 
-    public float SetTruck(GameObject truck) {
+    public void SetTruck(GameObject truck) {
         this.truck = truck; 
     }
 }

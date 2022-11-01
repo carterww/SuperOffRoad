@@ -14,8 +14,8 @@ public class TruckFactory
     public GameObject MakePlayerTruck() {
 
         // creates new truck gameobject, uses truck in prefabs/Truck as prototype
-        newTruck = Instantiate(truckPrefab);
-        controller = newTruck.GetComponent<TruckController>();
+        GameObject newTruck = GameObject.Instantiate(truckPrefab);
+        TruckController controller = newTruck.GetComponent<TruckController>();
 
         // set implementation of truck controls to a player
         controller.SetController(new PlayerTruckController());
@@ -27,8 +27,8 @@ public class TruckFactory
     public GameObject MakeNPCTruck() {
 
         // creates new truck gameobject, uses truck in prefabs/Truck as prototype
-        newTruck = Instantiate(truckPrefab);
-        controller = newTruck.GetComponent<TruckController>();
+        GameObject newTruck = GameObject.Instantiate(truckPrefab);
+        TruckController controller = newTruck.GetComponent<TruckController>();
 
         // set implementation of truck controls to an NPC
         controller.SetController(new NPCTruckController());
