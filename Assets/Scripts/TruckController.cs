@@ -9,6 +9,7 @@ public class TruckController : MonoBehaviour
 {
 
     Animator animator;
+    bool upHill = false;
     Rigidbody2D rigidBody2D;
 
     // Need to implement factory method here to choose
@@ -77,11 +78,46 @@ public class TruckController : MonoBehaviour
         if (!Mathf.Approximately(velocity.magnitude, 0.0f))
         {
             facing = velocity.normalized;
-            animator.SetFloat("X", facing.x);
+
+            // Since upHill animtion is flippedX of downhill animation, invert x facing direction
+            if (upHill == true)
+            {
+                animator.SetFloat("X", -facing.x);
+            }
+            else
+            {
+                animator.SetFloat("X", facing.x);
+            }
             animator.SetFloat("Y", facing.y);
         }
     }
+
     public void SetController(TruckControllerImp c) {
         this.implementation = c;
+    }
+
+    // called by triggerDownHill
+    public void SwitchDownHill(bool state)
+    {
+        animator.SetBool("DownHill", state);
+    }
+
+    // Called by triggerUpHill
+    public void SwitchUpHill(bool state)
+    {
+        animator.SetBool("DownHill", state);
+
+        SpriteRenderer s = GetComponent<SpriteRenderer>();
+
+        if (state == true)
+        {
+            s.flipX = true;
+            upHill = true;
+        }
+        else
+        {
+            s.flipX = false;
+            upHill = false;
+        }
     }
 }
