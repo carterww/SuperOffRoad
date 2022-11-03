@@ -8,16 +8,14 @@ using UnityEngine;
 public class TruckController : MonoBehaviour
 {
 
-     Animator animator;
+    Animator animator;
+    bool upHill = false;
+    Rigidbody2D rigidBody2D;
 
     // Need to implement factory method here to choose
     // Hard coded variable for testing
 
     TruckControllerImp implementation = new PlayerTruckController();
-    public void SetController(TruckControllerImp c) {
-        this.implementation = c;
-    }
-
     // Physics variables, will need fine tuning
     Vector2 facing = new Vector2(-1, 0);
     Vector2 velocity = new Vector2();
@@ -31,6 +29,7 @@ public class TruckController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         animator.SetFloat("X", -1.0f); animator.SetFloat("Y", 0.0f);
+        rigidBody2D = GetComponent<Rigidbody2D>();
         implementation.Start();
     }
 
@@ -43,6 +42,9 @@ public class TruckController : MonoBehaviour
     // Called once per physics frame -- independent from FPS
     void FixedUpdate()
     {
+        // added this for new transform
+        Vector2 position = rigidBody2D.position;
+
         float dt = Time.fixedDeltaTime;
         (float accel, float turn) control = implementation.Control();
 
@@ -69,14 +71,53 @@ public class TruckController : MonoBehaviour
         // Second pass
         velocity = velocity + turnAccel * dt;
         // Position update
-        transform.Translate(velocity.x * dt, velocity.y * dt, 0);
+        rigidBody2D.MovePosition(new Vector2(velocity.x * dt, velocity.y * dt) + position);
+        //transform.Translate(velocity.x * dt, velocity.y * dt, 0);
         
         // Updating new facing direction
         if (!Mathf.Approximately(velocity.magnitude, 0.0f))
         {
             facing = velocity.normalized;
-            animator.SetFloat("X", facing.x);
+
+            // Since upHill animtion is flippedX of downhill animation, invert x facing direction
+            if (upHill == true)
+            {
+                animator.SetFloat("X", -facing.x);
+            }
+            else
+            {
+                animator.SetFloat("X", facing.x);
+            }
             animator.SetFloat("Y", facing.y);
+        }
+    }
+
+    public void SetController(TruckControllerImp c) {
+        this.implementation = c;
+    }
+
+    // called by triggerDownHill
+    public void SwitchDownHill(bool state)
+    {
+        animator.SetBool("DownHill", state);
+    }
+
+    // Called by triggerUpHill
+    public void SwitchUpHill(bool state)
+    {
+        animator.SetBool("DownHill", state);
+
+        SpriteRenderer s = GetComponent<SpriteRenderer>();
+
+        if (state == true)
+        {
+            s.flipX = true;
+            upHill = true;
+        }
+        else
+        {
+            s.flipX = false;
+            upHill = false;
         }
     }
 }

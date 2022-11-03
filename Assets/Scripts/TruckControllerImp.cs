@@ -9,6 +9,7 @@ public abstract class TruckControllerImp
 
     // Update is called once per frame
     public abstract void Update();
+    
 
     // Determines the acceleration and steering direction for the truck
     public abstract (float, float) Control();
