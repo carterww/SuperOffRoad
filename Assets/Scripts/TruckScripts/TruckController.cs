@@ -18,6 +18,7 @@ public class TruckController : MonoBehaviour
     TruckControllerImp implementation = new PlayerTruckController();
     // Physics variables, will need fine tuning
     Vector2 facing = new Vector2(-1, 0);
+    float ySquash = 1.0f;
     Vector2 velocity = new Vector2();
     float frictionCoeff = 2.5f;
     float maxSpeed = 3f;
@@ -33,10 +34,20 @@ public class TruckController : MonoBehaviour
         implementation.Start();
     }
 
-    // Update is called once per frame
+    // Update is called once per frame -- for visual changes
     void Update()
     {
         implementation.Update();
+        // Since upHill animtion is flippedX of downhill animation, invert x facing direction
+        if (upHill == true)
+        {
+            animator.SetFloat("X", -facing.x);
+        }
+        else
+        {
+            animator.SetFloat("X", facing.x);
+        }
+        animator.SetFloat("Y", facing.y);
     }
 
     // Called once per physics frame -- independent from FPS
@@ -71,24 +82,13 @@ public class TruckController : MonoBehaviour
         // Second pass
         velocity = velocity + turnAccel * dt;
         // Position update
-        rigidBody2D.MovePosition(new Vector2(velocity.x * dt, velocity.y * dt) + position);
+        rigidBody2D.MovePosition(new Vector2(velocity.x * dt, velocity.y * ySquash * dt) + position);
         //transform.Translate(velocity.x * dt, velocity.y * dt, 0);
         
         // Updating new facing direction
         if (!Mathf.Approximately(velocity.magnitude, 0.0f))
         {
             facing = velocity.normalized;
-
-            // Since upHill animtion is flippedX of downhill animation, invert x facing direction
-            if (upHill == true)
-            {
-                animator.SetFloat("X", -facing.x);
-            }
-            else
-            {
-                animator.SetFloat("X", facing.x);
-            }
-            animator.SetFloat("Y", facing.y);
         }
     }
 
