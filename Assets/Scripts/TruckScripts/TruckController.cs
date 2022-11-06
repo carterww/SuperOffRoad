@@ -7,15 +7,16 @@ using UnityEngine;
 // Attached to Truck object
 public class TruckController : MonoBehaviour
 {
+    // DELETE THIS -- only for testing, set in Unity inspector
+    // Actual factory method should be used
+    public bool setPlayer;
 
     Animator animator;
     bool upHill = false;
     Rigidbody2D rigidBody2D;
 
-    // Need to implement factory method here to choose
-    // Hard coded variable for testing
+    TruckControllerImp implementation;
 
-    TruckControllerImp implementation = new PlayerTruckController();
     // Physics variables, will need fine tuning
     /*Vector2 facing = new Vector2(-1, 0);
     float ySquash = 1.0f;
@@ -30,9 +31,10 @@ public class TruckController : MonoBehaviour
     // modular friction based on velocity vector components, gives smoother turn transition than orbit-based steering
     float frictionCoeffForward = 2f; // front-back friction, aka if you pushed a car forwards
     float frictionCoeffLateral = 5f; // side-to-side friction, aka if you pushed a car from the side
-    float wallBounce = 0.5f; // amount to push the truck off the wall, proportional to velocity
     float maxAccel = 8f;
     float maxTurnSpeed = 4f; // radians per second
+    float wallBounce = 0.5f; // amount to push the truck off the wall, proportional to velocity
+    float truckBounce = 1.0f; // amount to bump trucks away from each other, proportional to velocity
 
     /* 
     TODO: maximum speed is constrained by maxAccel and frictionCoeffForward from the 
@@ -46,6 +48,13 @@ public class TruckController : MonoBehaviour
         animator = GetComponent<Animator>();
         animator.SetFloat("X", -1.0f); animator.SetFloat("Y", 0.0f);
         rigidBody2D = GetComponent<Rigidbody2D>();
+
+        // Hard coded variable for testing
+        if (setPlayer) {
+            implementation = new PlayerTruckController();
+        } else {
+            implementation = new NPCTruckController(this);
+        }
         implementation.Start();
     }
 
@@ -119,10 +128,16 @@ public class TruckController : MonoBehaviour
     {
         if (col.collider) {
             if (col.collider is EdgeCollider2D) {
-                // truck has hit a wall, bounce!
+                // truck has hit a wall, bounce off normal!
                 Vector2 normal = col.GetContact(0).normal;
-                Vector2 normComp = Vector2.Dot(normal, velocity) * normal; // component of velocity vector that is parallel to normal
-                velocity = velocity - (normComp * (1f + wallBounce));
+                Vector2 comp = Vector2.Dot(normal, velocity) * normal; // component of velocity vector that is parallel to normal
+                velocity = velocity - (comp * (1f + wallBounce));
+            }
+            if (col.collider is BoxCollider2D) {
+                // truck has hit another truck, bounce off direction!
+                Vector2 bounceDirection = (rigidBody2D.position - col.rigidbody.position).normalized;
+                Vector2 comp = Vector2.Dot(bounceDirection, velocity) * bounceDirection; // component of velocity vector that is parallel to bounceDirection
+                velocity = velocity - (comp * (1f + truckBounce));
             }
         }
     }
@@ -154,5 +169,25 @@ public class TruckController : MonoBehaviour
             s.flipX = false;
             upHill = false;
         }
+    }
+
+    // Casts rays out to collider objects in the forward facing hemisphere of the truck
+    public float[] ForwardRaycast()
+    {
+        // prepare directions
+        Vector2 perp = Vector2.Perpendicular(facing);
+        Vector2[] dirs = { perp, (facing + perp).normalized, facing, (facing - perp).normalized, -perp };
+        // raycast and return distances
+        float[] dists = new float[5];
+        Vector2 pos = rigidBody2D.position;
+        for (int i = 0; i < 5; i++) {
+            RaycastHit2D hit = Physics2D.Raycast(pos, dirs[i], 20.0f);
+            if (hit.collider != null) {
+                dists[i] = (hit.point - pos).magnitude;
+            } else {
+                dists[i] = 20.0f;
+            }
+        }
+        return dists;
     }
 }
