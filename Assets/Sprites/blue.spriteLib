@@ -1,0 +1,2102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: base
+    m_Hash: -1061880223
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: truck_sprites_0
+      m_Hash: -275095290
+      m_Sprite: {fileID: 156188833, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 156188833, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_1
+      m_Hash: -1734520432
+      m_Sprite: {fileID: -186768600, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -186768600, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_2
+      m_Hash: 26476586
+      m_Sprite: {fileID: 669257191, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 669257191, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_3
+      m_Hash: 1989357756
+      m_Sprite: {fileID: 784413599, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 784413599, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_4
+      m_Hash: -386423521
+      m_Sprite: {fileID: -350509993, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -350509993, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_5
+      m_Hash: -1611623031
+      m_Sprite: {fileID: 1490520329, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1490520329, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_6
+      m_Hash: 117031987
+      m_Sprite: {fileID: -469132413, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -469132413, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_7
+      m_Hash: 1912534181
+      m_Sprite: {fileID: -1396987049, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1396987049, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_8
+      m_Hash: -515774156
+      m_Sprite: {fileID: -1528140218, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1528140218, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_9
+      m_Hash: -1773741662
+      m_Sprite: {fileID: 2049437083, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2049437083, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_10
+      m_Hash: 72143156
+      m_Sprite: {fileID: 642263107, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 642263107, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_11
+      m_Hash: 1934352802
+      m_Sprite: {fileID: -220864245, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -220864245, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_12
+      m_Hash: -364728296
+      m_Sprite: {fileID: -668771537, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -668771537, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_13
+      m_Hash: -1656389490
+      m_Sprite: {fileID: 755058750, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 755058750, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_14
+      m_Hash: 52499757
+      m_Sprite: {fileID: -1353888052, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1353888052, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_15
+      m_Hash: 1948657083
+      m_Sprite: {fileID: 494482444, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 494482444, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_16
+      m_Hash: -315657215
+      m_Sprite: {fileID: 663991027, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 663991027, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_17
+      m_Hash: -1708637033
+      m_Sprite: {fileID: 134491808, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 134491808, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_18
+      m_Hash: 177690886
+      m_Sprite: {fileID: 1098639534, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1098639534, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_19
+      m_Hash: 2106616208
+      m_Sprite: {fileID: -868832890, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -868832890, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_20
+      m_Hash: 794919671
+      m_Sprite: {fileID: 878125192, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 878125192, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_21
+      m_Hash: 1483125345
+      m_Sprite: {fileID: 1731567851, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1731567851, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_22
+      m_Hash: -1049631781
+      m_Sprite: {fileID: -240628147, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -240628147, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_23
+      m_Hash: -1234644147
+      m_Sprite: {fileID: 844090104, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 844090104, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_24
+      m_Hash: 671893230
+      m_Sprite: {fileID: -1469604399, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1469604399, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_25
+      m_Hash: 1594586744
+      m_Sprite: {fileID: -1389776171, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1389776171, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_26
+      m_Hash: -972937278
+      m_Sprite: {fileID: -502221176, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -502221176, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_27
+      m_Hash: -1325066412
+      m_Sprite: {fileID: -1659804030, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1659804030, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_28
+      m_Hash: 565840581
+      m_Sprite: {fileID: -1539302300, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1539302300, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_29
+      m_Hash: 1455241811
+      m_Sprite: {fileID: -1372994030, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1372994030, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_30
+      m_Hash: 914011062
+      m_Sprite: {fileID: -1229595544, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1229595544, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_31
+      m_Hash: 1098744608
+      m_Sprite: {fileID: 2084573969, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2084573969, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_32
+      m_Hash: -663432550
+      m_Sprite: {fileID: 410072536, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 410072536, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_33
+      m_Hash: -1351359988
+      m_Sprite: {fileID: -29467690, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -29467690, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_34
+      m_Hash: 823621551
+      m_Sprite: {fileID: 133457601, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 133457601, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_35
+      m_Hash: 1175471929
+      m_Sprite: {fileID: 1196790987, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1196790987, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_36
+      m_Hash: -552003965
+      m_Sprite: {fileID: -1759308773, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1759308773, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_37
+      m_Hash: -1474419179
+      m_Sprite: {fileID: -330833786, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -330833786, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_38
+      m_Hash: 950090628
+      m_Sprite: {fileID: 432536121, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 432536121, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_39
+      m_Hash: 1336281874
+      m_Sprite: {fileID: -923110250, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -923110250, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_40
+      m_Hash: 2033919345
+      m_Sprite: {fileID: 1839867027, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1839867027, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_41
+      m_Hash: 238818791
+      m_Sprite: {fileID: 1498531393, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1498531393, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_42
+      m_Hash: -1758116771
+      m_Sprite: {fileID: 939803609, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 939803609, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_43
+      m_Hash: -533564213
+      m_Sprite: {fileID: -239063511, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -239063511, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_44
+      m_Hash: 2119623016
+      m_Sprite: {fileID: 601116871, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 601116871, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_45
+      m_Hash: 156357118
+      m_Sprite: {fileID: 196770967, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 196770967, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_46
+      m_Hash: -1873248188
+      m_Sprite: {fileID: 1213662531, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1213662531, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_47
+      m_Hash: -413159214
+      m_Sprite: {fileID: -1623110638, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1623110638, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_48
+      m_Hash: 2011213123
+      m_Sprite: {fileID: -1000683754, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1000683754, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_49
+      m_Hash: 15179221
+      m_Sprite: {fileID: -1641419375, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1641419375, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_50
+      m_Hash: 1612715056
+      m_Sprite: {fileID: 476984506, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 476984506, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_51
+      m_Hash: 388441254
+      m_Sprite: {fileID: -460780538, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -460780538, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_52
+      m_Hash: -1909557988
+      m_Sprite: {fileID: -1486449013, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1486449013, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_53
+      m_Hash: -114735734
+      m_Sprite: {fileID: -720202238, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -720202238, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_54
+      m_Hash: 1733152809
+      m_Sprite: {fileID: -1396739855, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1396739855, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_55
+      m_Hash: 273342655
+      m_Sprite: {fileID: -1415586320, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1415586320, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_56
+      m_Hash: -1992052475
+      m_Sprite: {fileID: -523536080, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -523536080, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_57
+      m_Hash: -29064813
+      m_Sprite: {fileID: -1427535244, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1427535244, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_58
+      m_Hash: 1861983234
+      m_Sprite: {fileID: 21931867, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21931867, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_59
+      m_Hash: 435989652
+      m_Sprite: {fileID: 1417729122, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1417729122, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_60
+      m_Hash: 1259161587
+      m_Sprite: {fileID: 945950226, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 945950226, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_61
+      m_Hash: 1007318885
+      m_Sprite: {fileID: -169715677, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -169715677, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_62
+      m_Hash: -1526520097
+      m_Sprite: {fileID: 47186406, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 47186406, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_63
+      m_Hash: -771484087
+      m_Sprite: {fileID: -1217370918, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1217370918, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_64
+      m_Hash: 1281393642
+      m_Sprite: {fileID: -406793518, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -406793518, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_65
+      m_Hash: 996651900
+      m_Sprite: {fileID: -1273242911, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1273242911, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_66
+      m_Hash: -1569791290
+      m_Sprite: {fileID: 369507485, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 369507485, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_67
+      m_Hash: -714485168
+      m_Sprite: {fileID: -417972893, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -417972893, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_68
+      m_Hash: 1171705793
+      m_Sprite: {fileID: -826585252, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -826585252, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_69
+      m_Hash: 852623191
+      m_Sprite: {fileID: 1754143840, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1754143840, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_70
+      m_Hash: 1377203890
+      m_Sprite: {fileID: 1614929769, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1614929769, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_71
+      m_Hash: 621889060
+      m_Sprite: {fileID: -1744752364, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1744752364, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_72
+      m_Hash: -1139271778
+      m_Sprite: {fileID: 861532854, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 861532854, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_73
+      m_Hash: -887150840
+      m_Sprite: {fileID: 1227472506, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1227472506, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_74
+      m_Hash: 1434170027
+      m_Sprite: {fileID: 2001598122, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2001598122, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_75
+      m_Hash: 578585149
+      m_Sprite: {fileID: -511465927, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -511465927, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_76
+      m_Hash: -1149906041
+      m_Sprite: {fileID: 1202526618, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1202526618, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_77
+      m_Hash: -864885999
+      m_Sprite: {fileID: 1297754635, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1297754635, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_78
+      m_Hash: 1557003904
+      m_Sprite: {fileID: 442621018, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 442621018, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_79
+      m_Hash: 734711318
+      m_Sprite: {fileID: 1647799846, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1647799846, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_80
+      m_Hash: -712086915
+      m_Sprite: {fileID: -562903020, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -562903020, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_81
+      m_Hash: -1568056597
+      m_Sprite: {fileID: 838597148, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 838597148, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_82
+      m_Hash: 998247249
+      m_Sprite: {fileID: 1692148196, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1692148196, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_83
+      m_Hash: 1283931079
+      m_Sprite: {fileID: 111906865, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 111906865, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_84
+      m_Hash: -756830620
+      m_Sprite: {fileID: -268975800, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -268975800, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_85
+      m_Hash: -1511743758
+      m_Sprite: {fileID: 456500083, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 456500083, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_86
+      m_Hash: 1022218056
+      m_Sprite: {fileID: -620128693, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -620128693, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_87
+      m_Hash: 1273692126
+      m_Sprite: {fileID: -1822792422, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1822792422, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_88
+      m_Hash: -615128497
+      m_Sprite: {fileID: -231444740, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -231444740, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_89
+      m_Hash: -1403858215
+      m_Sprite: {fileID: -818846933, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -818846933, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_90
+      m_Hash: -862627012
+      m_Sprite: {fileID: -52699157, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -52699157, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_91
+      m_Hash: -1148032086
+      m_Sprite: {fileID: 1434125802, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1434125802, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_92
+      m_Hash: 580598288
+      m_Sprite: {fileID: 1529670314, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1529670314, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_93
+      m_Hash: 1436289670
+      m_Sprite: {fileID: -420389720, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -420389720, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_94
+      m_Hash: -872898779
+      m_Sprite: {fileID: -1404371494, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1404371494, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_95
+      m_Hash: -1124094029
+      m_Sprite: {fileID: -1068964537, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1068964537, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_96
+      m_Hash: 636943881
+      m_Sprite: {fileID: 19541423, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 19541423, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_97
+      m_Hash: 1391578783
+      m_Sprite: {fileID: 377163347, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 377163347, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_98
+      m_Hash: -1035021554
+      m_Sprite: {fileID: 1744039329, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1744039329, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_99
+      m_Hash: -1253448808
+      m_Sprite: {fileID: 476254933, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 476254933, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_100
+      m_Hash: -714381499
+      m_Sprite: {fileID: 1558040640, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1558040640, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_101
+      m_Hash: -1569957933
+      m_Sprite: {fileID: -1811339078, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1811339078, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_102
+      m_Hash: 996476521
+      m_Sprite: {fileID: 1201919069, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1201919069, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_103
+      m_Hash: 1281505023
+      m_Sprite: {fileID: -1609736068, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1609736068, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_104
+      m_Hash: -771316900
+      m_Sprite: {fileID: 1899346014, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1899346014, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_105
+      m_Hash: -1526623286
+      m_Sprite: {fileID: 2028354619, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2028354619, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_106
+      m_Hash: 1007207024
+      m_Sprite: {fileID: -1239563638, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1239563638, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_107
+      m_Hash: 1259336422
+      m_Sprite: {fileID: -1848049409, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1848049409, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_108
+      m_Hash: -609161353
+      m_Sprite: {fileID: -309369114, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -309369114, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_109
+      m_Hash: -1397235743
+      m_Sprite: {fileID: -2141874958, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2141874958, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_110
+      m_Hash: -865053180
+      m_Sprite: {fileID: -878624365, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -878624365, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_111
+      m_Hash: -1149802862
+      m_Sprite: {fileID: -793948544, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -793948544, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_112
+      m_Hash: 578697000
+      m_Sprite: {fileID: 108037800, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 108037800, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_113
+      m_Hash: 1433995198
+      m_Sprite: {fileID: 892199489, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 892199489, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_114
+      m_Hash: -887254499
+      m_Sprite: {fileID: 704605438, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 704605438, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_115
+      m_Hash: -1139105141
+      m_Sprite: {fileID: 455260594, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 455260594, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_116
+      m_Hash: 622064433
+      m_Sprite: {fileID: 1843632782, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1843632782, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_117
+      m_Hash: 1377092519
+      m_Sprite: {fileID: -871932694, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -871932694, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_118
+      m_Hash: -1028923850
+      m_Sprite: {fileID: -190868347, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -190868347, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_119
+      m_Hash: -1246957920
+      m_Sprite: {fileID: -450683384, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -450683384, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_120
+      m_Hash: -413334073
+      m_Sprite: {fileID: 1530520305, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1530520305, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_121
+      m_Hash: -1873136303
+      m_Sprite: {fileID: 151285507, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 151285507, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_122
+      m_Hash: 156460267
+      m_Sprite: {fileID: -651255680, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -651255680, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_123
+      m_Hash: 2119455869
+      m_Sprite: {fileID: -1309356377, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1309356377, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_124
+      m_Hash: -533675554
+      m_Sprite: {fileID: -86684009, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -86684009, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_125
+      m_Hash: -1757941432
+      m_Sprite: {fileID: 570499102, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 570499102, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_126
+      m_Hash: 238985458
+      m_Sprite: {fileID: -1711436376, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1711436376, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_127
+      m_Hash: 2033815652
+      m_Sprite: {fileID: 610244450, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 610244450, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_128
+      m_Hash: -377057803
+      m_Sprite: {fileID: -393264631, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -393264631, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_129
+      m_Hash: -1635664541
+      m_Sprite: {fileID: -2065216187, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2065216187, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_130
+      m_Hash: -28953466
+      m_Sprite: {fileID: 1387719473, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1387719473, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_131
+      m_Hash: -1992227824
+      m_Sprite: {fileID: -2123786019, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2123786019, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_132
+      m_Hash: 273175978
+      m_Sprite: {fileID: -1177531157, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1177531157, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_133
+      m_Hash: 1733256508
+      m_Sprite: {fileID: -512708702, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -512708702, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_134
+      m_Hash: -114560865
+      m_Sprite: {fileID: -1650029007, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1650029007, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_135
+      m_Hash: -1909669879
+      m_Sprite: {fileID: 125738469, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 125738469, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_136
+      m_Hash: 388338099
+      m_Sprite: {fileID: -1279926935, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1279926935, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_137
+      m_Hash: 1612882213
+      m_Sprite: {fileID: 292988813, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 292988813, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_138
+      m_Hash: -258097996
+      m_Sprite: {fileID: 977831246, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 977831246, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_139
+      m_Hash: -2019914718
+      m_Sprite: {fileID: 2092208101, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2092208101, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_140
+      m_Hash: -1324899775
+      m_Sprite: {fileID: 287947762, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 287947762, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_141
+      m_Hash: -973040937
+      m_Sprite: {fileID: 1070892278, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1070892278, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_142
+      m_Hash: 1594475373
+      m_Sprite: {fileID: -1138346365, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1138346365, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_143
+      m_Hash: 672068603
+      m_Sprite: {fileID: -235798601, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -235798601, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_144
+      m_Hash: -1234540968
+      m_Sprite: {fileID: -2067973913, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2067973913, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_145
+      m_Hash: -1049798962
+      m_Sprite: {fileID: -58392180, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -58392180, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_146
+      m_Hash: 1482950516
+      m_Sprite: {fileID: -1571882498, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1571882498, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_147
+      m_Hash: 795031522
+      m_Sprite: {fileID: 1621104161, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1621104161, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_148
+      m_Hash: -1076090253
+      m_Sprite: {fileID: 724946248, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 724946248, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_149
+      m_Hash: -925164827
+      m_Sprite: {fileID: -1128464540, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1128464540, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_150
+      m_Hash: -1474522368
+      m_Sprite: {fileID: 1484026796, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1484026796, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_151
+      m_Hash: -551836778
+      m_Sprite: {fileID: -1537581699, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1537581699, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_152
+      m_Hash: 1175646764
+      m_Sprite: {fileID: -473275896, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -473275896, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_153
+      m_Hash: 823509690
+      m_Sprite: {fileID: -1593096526, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1593096526, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_154
+      m_Hash: -1351526631
+      m_Sprite: {fileID: -1369142458, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1369142458, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_155
+      m_Hash: -663328881
+      m_Sprite: {fileID: -1065973113, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1065973113, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_156
+      m_Hash: 1098855989
+      m_Sprite: {fileID: 1948945539, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1948945539, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_157
+      m_Hash: 913835683
+      m_Sprite: {fileID: 367991120, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 367991120, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_158
+      m_Hash: -1496900814
+      m_Sprite: {fileID: 677454501, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 677454501, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_159
+      m_Hash: -775935068
+      m_Sprite: {fileID: -1812896667, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1812896667, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_160
+      m_Hash: -2093891389
+      m_Sprite: {fileID: -1840381420, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1840381420, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_161
+      m_Hash: -197726123
+      m_Sprite: {fileID: -1006500272, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1006500272, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_162
+      m_Hash: 1832886767
+      m_Sprite: {fileID: 721905203, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 721905203, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_163
+      m_Hash: 439914873
+      m_Sprite: {fileID: 1182647564, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1182647564, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_164
+      m_Hash: -2074344230
+      m_Sprite: {fileID: 301713597, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 301713597, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_165
+      m_Hash: -212126644
+      m_Sprite: {fileID: 1182079614, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1182079614, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_166
+      m_Hash: 1783784950
+      m_Sprite: {fileID: -1539817733, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1539817733, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_167
+      m_Hash: 492131680
+      m_Sprite: {fileID: -610357027, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -610357027, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_168
+      m_Hash: -1914025743
+      m_Sprite: {fileID: 683222311, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 683222311, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_169
+      m_Hash: -85100441
+      m_Sprite: {fileID: -1714569822, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1714569822, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_170
+      m_Hash: -1708461694
+      m_Sprite: {fileID: -1886252190, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1886252190, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_171
+      m_Hash: -315768556
+      m_Sprite: {fileID: 1374148268, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1374148268, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_172
+      m_Hash: 1948553390
+      m_Sprite: {fileID: -897245442, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -897245442, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_173
+      m_Hash: 52666424
+      m_Sprite: {fileID: 1852385078, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1852385078, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_174
+      m_Hash: -1656277605
+      m_Sprite: {fileID: 206080859, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 206080859, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_175
+      m_Hash: -364903155
+      m_Sprite: {fileID: -219109349, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -219109349, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_176
+      m_Hash: 1934185655
+      m_Sprite: {fileID: -1614558919, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1614558919, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_177
+      m_Hash: 72246305
+      m_Sprite: {fileID: -713710255, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -713710255, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_178
+      m_Hash: -1796114000
+      m_Sprite: {fileID: 1876192291, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1876192291, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_179
+      m_Hash: -470398682
+      m_Sprite: {fileID: -177588494, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -177588494, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_180
+      m_Hash: 498265421
+      m_Sprite: {fileID: 1151411780, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1151411780, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_181
+      m_Hash: 1790303707
+      m_Sprite: {fileID: 839832051, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 839832051, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_182
+      m_Hash: -205747103
+      m_Sprite: {fileID: -747179778, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -747179778, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_183
+      m_Hash: -2068071177
+      m_Sprite: {fileID: 879283648, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 879283648, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_184
+      m_Hash: 450832724
+      m_Sprite: {fileID: -1754264090, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1754264090, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_185
+      m_Hash: 1842878914
+      m_Sprite: {fileID: -1007409792, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1007409792, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_186
+      m_Hash: -187611016
+      m_Sprite: {fileID: -545495742, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -545495742, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_187
+      m_Hash: -2083096338
+      m_Sprite: {fileID: 346820442, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 346820442, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_188
+      m_Hash: 325674367
+      m_Sprite: {fileID: -1854758555, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1854758555, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_189
+      m_Hash: 1684952553
+      m_Sprite: {fileID: 972718990, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 972718990, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_190
+      m_Hash: 78240780
+      m_Sprite: {fileID: 664028501, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 664028501, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_191
+      m_Hash: 1940843674
+      m_Sprite: {fileID: -876520960, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -876520960, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_192
+      m_Hash: -358105824
+      m_Sprite: {fileID: -1721922278, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1721922278, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_193
+      m_Hash: -1650422346
+      m_Sprite: {fileID: -1788341772, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1788341772, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_194
+      m_Hash: 63182869
+      m_Sprite: {fileID: -1938147071, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1938147071, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_195
+      m_Hash: 1958946947
+      m_Sprite: {fileID: 1463397184, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1463397184, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_196
+      m_Hash: -305497799
+      m_Sprite: {fileID: -1549205842, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1549205842, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_197
+      m_Hash: -1697822289
+      m_Sprite: {fileID: 441405444, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 441405444, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_198
+      m_Hash: 175264830
+      m_Sprite: {fileID: 1681555582, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1681555582, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_199
+      m_Hash: 2104845480
+      m_Sprite: {fileID: 1785471450, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1785471450, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_200
+      m_Hash: -684861156
+      m_Sprite: {fileID: -415604990, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -415604990, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_201
+      m_Hash: -1607800438
+      m_Sprite: {fileID: -1759800826, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1759800826, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_202
+      m_Hash: 958642224
+      m_Sprite: {fileID: 610145497, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 610145497, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_203
+      m_Hash: 1311017126
+      m_Sprite: {fileID: -255675202, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -255675202, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_204
+      m_Hash: -801104635
+      m_Sprite: {fileID: 1377419718, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1377419718, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_205
+      m_Hash: -1488507501
+      m_Sprite: {fileID: 120192981, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 120192981, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_206
+      m_Hash: 1045330985
+      m_Sprite: {fileID: 942325274, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 942325274, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_207
+      m_Hash: 1229540543
+      m_Sprite: {fileID: 168173332, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 168173332, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_208
+      m_Hash: -638168786
+      m_Sprite: {fileID: -1900103128, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1900103128, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_209
+      m_Hash: -1359912520
+      m_Sprite: {fileID: 900078909, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 900078909, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_210
+      m_Hash: -835262371
+      m_Sprite: {fileID: 1062883842, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1062883842, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_211
+      m_Hash: -1187915573
+      m_Sprite: {fileID: 399245933, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 399245933, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_212
+      m_Hash: 540576113
+      m_Sprite: {fileID: -596642871, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -596642871, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_213
+      m_Hash: 1463794151
+      m_Sprite: {fileID: -1875100056, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1875100056, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_214
+      m_Hash: -916771772
+      m_Sprite: {fileID: 1033649663, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1033649663, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_215
+      m_Hash: -1101259566
+      m_Sprite: {fileID: 31492388, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 31492388, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_216
+      m_Hash: 659901800
+      m_Sprite: {fileID: -2131914578, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2131914578, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_217
+      m_Hash: 1347583486
+      m_Sprite: {fileID: 324958708, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 324958708, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_218
+      m_Hash: -1058185105
+      m_Sprite: {fileID: -1993366289, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1993366289, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_219
+      m_Hash: -1209380615
+      m_Sprite: {fileID: -329280835, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -329280835, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_220
+      m_Hash: -451167330
+      m_Sprite: {fileID: 253186257, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 253186257, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_221
+      m_Hash: -1843623160
+      m_Sprite: {fileID: -637205026, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -637205026, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_222
+      m_Hash: 185981618
+      m_Sprite: {fileID: -828722999, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -828722999, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_223
+      m_Hash: 2081614372
+      m_Sprite: {fileID: -1414790124, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1414790124, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_224
+      m_Hash: -495550585
+      m_Sprite: {fileID: 1324934176, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1324934176, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_225
+      m_Hash: -1787736303
+      m_Sprite: {fileID: 1670737847, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1670737847, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_226
+      m_Hash: 209198763
+      m_Sprite: {fileID: 2077114958, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2077114958, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_227
+      m_Hash: 2071932477
+      m_Sprite: {fileID: -1751672340, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1751672340, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_228
+      m_Hash: -339725396
+      m_Sprite: {fileID: 1938091270, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1938091270, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_229
+      m_Hash: -1664679110
+      m_Sprite: {fileID: 1490865562, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1490865562, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_230
+      m_Hash: -67073313
+      m_Sprite: {fileID: -1725333400, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1725333400, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_231
+      m_Hash: -1962427831
+      m_Sprite: {fileID: -421629809, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -421629809, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_232
+      m_Hash: 302967795
+      m_Sprite: {fileID: 786447997, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 786447997, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_233
+      m_Hash: 1695144805
+      m_Sprite: {fileID: 1376924049, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1376924049, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_234
+      m_Hash: -76722490
+      m_Sprite: {fileID: -117995818, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -117995818, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_235
+      m_Hash: -1939177904
+      m_Sprite: {fileID: -149373791, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -149373791, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_236
+      m_Hash: 358821866
+      m_Sprite: {fileID: -1498075106, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1498075106, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_237
+      m_Hash: 1650728828
+      m_Sprite: {fileID: 456542025, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 456542025, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_238
+      m_Hash: -220527891
+      m_Sprite: {fileID: 715944382, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 715944382, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_239
+      m_Hash: -2049166725
+      m_Sprite: {fileID: -1508390988, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1508390988, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_240
+      m_Hash: -1287578600
+      m_Sprite: {fileID: -638449708, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -638449708, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_241
+      m_Hash: -1002034034
+      m_Sprite: {fileID: -1047235922, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1047235922, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_242
+      m_Hash: 1565490484
+      m_Sprite: {fileID: -1120120726, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1120120726, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_243
+      m_Hash: 709381538
+      m_Sprite: {fileID: 784614999, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 784614999, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_244
+      m_Hash: -1272129535
+      m_Sprite: {fileID: -260775598, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -260775598, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_245
+      m_Hash: -1020532585
+      m_Sprite: {fileID: -1442889464, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1442889464, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_246
+      m_Hash: 1512225069
+      m_Sprite: {fileID: 772891424, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 772891424, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_247
+      m_Hash: 757434811
+      m_Sprite: {fileID: 2147254152, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2147254152, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_248
+      m_Hash: -1113942998
+      m_Sprite: {fileID: 1114911504, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1114911504, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_249
+      m_Hash: -895638340
+      m_Sprite: {fileID: 1378400493, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1378400493, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_250
+      m_Hash: -1436930727
+      m_Sprite: {fileID: -1304221423, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1304221423, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_251
+      m_Hash: -581100081
+      m_Sprite: {fileID: -1498713386, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1498713386, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_252
+      m_Hash: 1146375285
+      m_Sprite: {fileID: -795983017, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -795983017, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_253
+      m_Hash: 861109475
+      m_Sprite: {fileID: 1314902045, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1314902045, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_254
+      m_Hash: -1388844736
+      m_Sprite: {fileID: -1080897192, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1080897192, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_255
+      m_Hash: -634332714
+      m_Sprite: {fileID: 1031504791, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1031504791, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_256
+      m_Hash: 1127843948
+      m_Sprite: {fileID: 1050205485, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1050205485, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_257
+      m_Hash: 876525818
+      m_Sprite: {fileID: 223587987, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 223587987, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_258
+      m_Hash: -1535007381
+      m_Sprite: {fileID: -1443771699, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1443771699, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_259
+      m_Hash: -746154499
+      m_Sprite: {fileID: -1614590361, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1614590361, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_260
+      m_Hash: -2122875238
+      m_Sprite: {fileID: 1657158448, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1657158448, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_261
+      m_Hash: -160412148
+      m_Sprite: {fileID: -356387982, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -356387982, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_262
+      m_Hash: 1870208950
+      m_Sprite: {fileID: -451361454, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -451361454, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_263
+      m_Hash: 410922784
+      m_Sprite: {fileID: 1616789574, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1616789574, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_264
+      m_Hash: -2045068669
+      m_Sprite: {fileID: -336026350, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -336026350, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_265
+      m_Hash: -249722347
+      m_Sprite: {fileID: 1397380081, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1397380081, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_266
+      m_Hash: 1746197423
+      m_Sprite: {fileID: 622413216, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 622413216, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_267
+      m_Hash: 521399097
+      m_Sprite: {fileID: -1329111137, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1329111137, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_268
+      m_Hash: -1884490072
+      m_Sprite: {fileID: 483577409, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 483577409, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_269
+      m_Hash: -122960322
+      m_Sprite: {fileID: 1594192750, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1594192750, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_270
+      m_Hash: -1737732133
+      m_Sprite: {fileID: -1523866373, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1523866373, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_271
+      m_Hash: -278167731
+      m_Sprite: {fileID: -359211283, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -359211283, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_272
+      m_Hash: 1986146039
+      m_Sprite: {fileID: 490353730, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 490353730, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_273
+      m_Hash: 23404129
+      m_Sprite: {fileID: 274516076, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 274516076, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_274
+      m_Hash: -1627288638
+      m_Sprite: {fileID: -153485511, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -153485511, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_275
+      m_Hash: -402212012
+      m_Sprite: {fileID: -1069013018, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1069013018, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_276
+      m_Hash: 1896868590
+      m_Sprite: {fileID: -1302059904, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1302059904, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_277
+      m_Hash: 101243512
+      m_Sprite: {fileID: 773622255, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 773622255, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_278
+      m_Hash: -1766340631
+      m_Sprite: {fileID: 1261633205, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1261633205, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_279
+      m_Hash: -508496001
+      m_Sprite: {fileID: -826238529, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -826238529, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_280
+      m_Hash: 536105748
+      m_Sprite: {fileID: 2102521956, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2102521956, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_281
+      m_Hash: 1760781186
+      m_Sprite: {fileID: 1462013460, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1462013460, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_282
+      m_Hash: -235261384
+      m_Sprite: {fileID: 19365726, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 19365726, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_283
+      m_Hash: -2030239058
+      m_Sprite: {fileID: -1202677654, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1202677654, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_284
+      m_Hash: 412718861
+      m_Sprite: {fileID: -405450968, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -405450968, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_285
+      m_Hash: 1872668571
+      m_Sprite: {fileID: -1249447674, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1249447674, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_286
+      m_Hash: -157813215
+      m_Sprite: {fileID: -1838368146, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1838368146, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_287
+      m_Hash: -2121218377
+      m_Sprite: {fileID: 306548448, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 306548448, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_288
+      m_Hash: 288348966
+      m_Sprite: {fileID: -1227840735, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1227840735, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_289
+      m_Hash: 1713957808
+      m_Sprite: {fileID: -1947740186, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1947740186, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_290
+      m_Hash: 116351573
+      m_Sprite: {fileID: -572268623, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -572268623, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_291
+      m_Hash: 1911050947
+      m_Sprite: {fileID: 845875895, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 845875895, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_292
+      m_Hash: -387906695
+      m_Sprite: {fileID: -1019953341, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1019953341, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_293
+      m_Hash: -1612303377
+      m_Sprite: {fileID: 780835094, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 780835094, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_294
+      m_Hash: 25339468
+      m_Sprite: {fileID: 957907184, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 957907184, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_295
+      m_Hash: 1988466394
+      m_Sprite: {fileID: 652876596, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 652876596, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_296
+      m_Hash: -275986592
+      m_Sprite: {fileID: 1721693723, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1721693723, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_297
+      m_Hash: -1735657482
+      m_Sprite: {fileID: 1017856970, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1017856970, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_298
+      m_Hash: 137685607
+      m_Sprite: {fileID: -1299647571, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1299647571, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_299
+      m_Hash: 2134104817
+      m_Sprite: {fileID: -1860723472, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1860723472, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_300
+      m_Hash: -688934101
+      m_Sprite: {fileID: -1058030863, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1058030863, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_301
+      m_Hash: -1578597443
+      m_Sprite: {fileID: -641841960, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -641841960, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_302
+      m_Hash: 954323463
+      m_Sprite: {fileID: 1944938087, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1944938087, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_303
+      m_Hash: 1340531345
+      m_Sprite: {fileID: -1790524023, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1790524023, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_304
+      m_Hash: -779978958
+      m_Sprite: {fileID: 197338602, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 197338602, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_305
+      m_Hash: -1501214812
+      m_Sprite: {fileID: -655063875, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -655063875, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_306
+      m_Hash: 1066145310
+      m_Sprite: {fileID: 2095419314, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2095419314, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_307
+      m_Hash: 1217078920
+      m_Sprite: {fileID: -359702302, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -359702302, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_308
+      m_Hash: -667665639
+      m_Sprite: {fileID: -335065672, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -335065672, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_309
+      m_Hash: -1355609201
+      m_Sprite: {fileID: 1973439635, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1973439635, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_310
+      m_Hash: -806059414
+      m_Sprite: {fileID: -1574757600, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1574757600, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_311
+      m_Hash: -1191988484
+      m_Sprite: {fileID: 1033335467, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1033335467, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_312
+      m_Hash: 570090310
+      m_Sprite: {fileID: 1860212032, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1860212032, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_313
+      m_Hash: 1459475408
+      m_Sprite: {fileID: -450597429, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -450597429, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_314
+      m_Hash: -929479053
+      m_Sprite: {fileID: 1167133427, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1167133427, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_315
+      m_Hash: -1080133915
+      m_Sprite: {fileID: 591844126, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 591844126, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_316
+      m_Hash: 647440223
+      m_Sprite: {fileID: -186623342, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -186623342, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_317
+      m_Hash: 1368397769
+      m_Sprite: {fileID: 1499554275, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1499554275, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_318
+      m_Hash: -1053881768
+      m_Sprite: {fileID: -2071978376, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2071978376, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_319
+      m_Hash: -1238877490
+      m_Sprite: {fileID: -1371012364, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1371012364, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_320
+      m_Hash: -455487063
+      m_Sprite: {fileID: -909779619, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -909779619, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_321
+      m_Hash: -1814109889
+      m_Sprite: {fileID: 627393153, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 627393153, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_322
+      m_Hash: 181907589
+      m_Sprite: {fileID: 34926436, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 34926436, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_323
+      m_Hash: 2110816275
+      m_Sprite: {fileID: 1048403692, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1048403692, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_324
+      m_Hash: -474737232
+      m_Sprite: {fileID: -1856116677, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1856116677, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_325
+      m_Hash: -1800198874
+      m_Sprite: {fileID: -1669093234, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1669093234, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_326
+      m_Hash: 230323356
+      m_Sprite: {fileID: 453214789, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 453214789, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_327
+      m_Hash: 2059224074
+      m_Sprite: {fileID: -1597472628, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1597472628, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_328
+      m_Hash: -368944741
+      m_Sprite: {fileID: 1347884762, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1347884762, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_329
+      m_Hash: -1660589811
+      m_Sprite: {fileID: 1115495158, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1115495158, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_330
+      m_Hash: -37560088
+      m_Sprite: {fileID: 1737492254, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1737492254, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_331
+      m_Hash: -1966747522
+      m_Sprite: {fileID: -1392187410, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1392187410, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_332
+      m_Hash: 332169668
+      m_Sprite: {fileID: -1721411961, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1721411961, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_333
+      m_Hash: 1691070802
+      m_Sprite: {fileID: 1923335166, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1923335166, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_334
+      m_Hash: -89185039
+      m_Sprite: {fileID: -483015993, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -483015993, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_335
+      m_Hash: -1918364569
+      m_Sprite: {fileID: 307244075, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 307244075, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_336
+      m_Hash: 346113501
+      m_Sprite: {fileID: -2126758038, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2126758038, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_337
+      m_Hash: 1671853387
+      m_Sprite: {fileID: -783847158, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -783847158, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_338
+      m_Hash: -216438566
+      m_Sprite: {fileID: 279527952, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 279527952, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_339
+      m_Hash: -2078386100
+      m_Sprite: {fileID: -465709751, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -465709751, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_340
+      m_Hash: -1300007377
+      m_Sprite: {fileID: 1359341033, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1359341033, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_341
+      m_Hash: -981186887
+      m_Sprite: {fileID: -509590891, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -509590891, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_342
+      m_Hash: 1552750339
+      m_Sprite: {fileID: -1179684756, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1179684756, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_343
+      m_Hash: 730474389
+      m_Sprite: {fileID: 424852118, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 424852118, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_344
+      m_Hash: -1242648010
+      m_Sprite: {fileID: 43978581, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 43978581, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_345
+      m_Hash: -1024884064
+      m_Sprite: {fileID: 1826792829, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1826792829, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_346
+      m_Hash: 1541460762
+      m_Sprite: {fileID: 1037017283, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1037017283, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_347
+      m_Hash: 753394572
+      m_Sprite: {fileID: 913691665, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 913691665, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_348
+      m_Hash: -1135018467
+      m_Sprite: {fileID: -67931610, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -67931610, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_349
+      m_Hash: -882913653
+      m_Sprite: {fileID: -21461899, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -21461899, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_350
+      m_Hash: -1416083602
+      m_Sprite: {fileID: -180168848, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -180168848, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_351
+      m_Hash: -593528840
+      m_Sprite: {fileID: -535693683, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -535693683, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_352
+      m_Hash: 1167468098
+      m_Sprite: {fileID: 1242149174, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1242149174, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_353
+      m_Hash: 848369364
+      m_Sprite: {fileID: 973176044, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 973176044, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_354
+      m_Hash: -1393196169
+      m_Sprite: {fileID: 1753962471, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1753962471, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_355
+      m_Hash: -604851231
+      m_Sprite: {fileID: -62958165, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -62958165, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_356
+      m_Hash: 1123803739
+      m_Sprite: {fileID: 568103139, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 568103139, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_357
+      m_Hash: 905761485
+      m_Sprite: {fileID: -92217772, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -92217772, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_358
+      m_Hash: -1522282660
+      m_Sprite: {fileID: -114706094, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -114706094, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_359
+      m_Hash: -767230006
+      m_Sprite: {fileID: 451477836, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 451477836, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_360
+      m_Hash: -2135616339
+      m_Sprite: {fileID: 1200576771, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1200576771, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_361
+      m_Hash: -139320261
+      m_Sprite: {fileID: -2117182034, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2117182034, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_362
+      m_Hash: 1857779073
+      m_Sprite: {fileID: 1317667552, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1317667552, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_363
+      m_Hash: 431768855
+      m_Sprite: {fileID: 767609179, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 767609179, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_364
+      m_Hash: -2015833932
+      m_Sprite: {fileID: -956818536, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -956818536, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_365
+      m_Hash: -253763550
+      m_Sprite: {fileID: -1254551209, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1254551209, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_366
+      m_Hash: 1775677848
+      m_Sprite: {fileID: 442347079, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 442347079, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_367
+      m_Hash: 517046542
+      m_Sprite: {fileID: -50497128, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -50497128, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_368
+      m_Hash: -1905353569
+      m_Sprite: {fileID: -404925955, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -404925955, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_369
+      m_Hash: -110515191
+      m_Sprite: {fileID: 1628942916, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1628942916, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_370
+      m_Hash: -1716640276
+      m_Sprite: {fileID: 1320968067, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1320968067, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_371
+      m_Hash: -290908806
+      m_Sprite: {fileID: 156373773, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 156373773, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_372
+      m_Hash: 2006992064
+      m_Sprite: {fileID: -637290293, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -637290293, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_373
+      m_Hash: 10974294
+      m_Sprite: {fileID: -444883243, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -444883243, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_374
+      m_Hash: -1631329803
+      m_Sprite: {fileID: -2073404771, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2073404771, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_375
+      m_Hash: -372977309
+      m_Sprite: {fileID: -1104709386, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1104709386, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_376
+      m_Hash: 1892516057
+      m_Sprite: {fileID: 605391115, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 605391115, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_377
+      m_Hash: 130723919
+      m_Sprite: {fileID: 245935578, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 245935578, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_378
+      m_Hash: -1753895458
+      m_Sprite: {fileID: 1899112417, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1899112417, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_379
+      m_Hash: -529359544
+      m_Sprite: {fileID: -53916218, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -53916218, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_380
+      m_Hash: 506870051
+      m_Sprite: {fileID: -1768577527, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1768577527, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_381
+      m_Hash: 1764821429
+      m_Sprite: {fileID: -1406721100, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1406721100, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_382
+      m_Hash: -264742897
+      m_Sprite: {fileID: -2076140725, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2076140725, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_383
+      m_Hash: -2025887591
+      m_Sprite: {fileID: -1231377699, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1231377699, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_384
+      m_Hash: 425459002
+      m_Sprite: {fileID: -507111858, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -507111858, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_385
+      m_Hash: 1851575724
+      m_Sprite: {fileID: -1441668289, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1441668289, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_386
+      m_Hash: -145384426
+      m_Sprite: {fileID: -280752268, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -280752268, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_387
+      m_Hash: -2142065536
+      m_Sprite: {fileID: -366177499, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -366177499, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_388
+      m_Hash: 284012817
+      m_Sprite: {fileID: -753642910, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -753642910, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_389
+      m_Hash: 1743421831
+      m_Sprite: {fileID: 1641932700, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1641932700, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_390
+      m_Hash: 120391778
+      m_Sprite: {fileID: -727814545, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -727814545, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_391
+      m_Hash: 1881815284
+      m_Sprite: {fileID: 1639438850, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1639438850, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_392
+      m_Hash: -383555250
+      m_Sprite: {fileID: 1953058620, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1953058620, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_393
+      m_Hash: -1641784872
+      m_Sprite: {fileID: 1957227584, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1957227584, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_394
+      m_Hash: 4246651
+      m_Sprite: {fileID: 2011489751, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2011489751, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_395
+      m_Hash: 2001206509
+      m_Sprite: {fileID: -1899153345, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1899153345, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_396
+      m_Hash: -296833705
+      m_Sprite: {fileID: 125321891, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 125321891, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_397
+      m_Hash: -1723228735
+      m_Sprite: {fileID: -2100123494, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2100123494, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_398
+      m_Hash: 167149648
+      m_Sprite: {fileID: -1094189501, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1094189501, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_399
+      m_Hash: 2129768646
+      m_Sprite: {fileID: -1156387957, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1156387957, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_400
+      m_Hash: -744446546
+      m_Sprite: {fileID: 424972977, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 424972977, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_401
+      m_Hash: -1532521160
+      m_Sprite: {fileID: 1902216486, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1902216486, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_402
+      m_Hash: 1034863746
+      m_Sprite: {fileID: 1178641322, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1178641322, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_403
+      m_Hash: 1252652052
+      m_Sprite: {fileID: -1931655751, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1931655751, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_404
+      m_Hash: -724737609
+      m_Sprite: {fileID: -1322290315, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1322290315, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_405
+      m_Hash: -1547022047
+      m_Sprite: {fileID: -515377371, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -515377371, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_406
+      m_Hash: 985858203
+      m_Sprite: {fileID: 832328394, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 832328394, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_407
+      m_Hash: 1304702989
+      m_Sprite: {fileID: -351676765, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -351676765, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_408
+      m_Hash: -579129956
+      m_Sprite: {fileID: 361587230, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 361587230, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_409
+      m_Hash: -1434706678
+      m_Sprite: {fileID: 1745991200, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1745991200, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_410
+      m_Hash: -893676305
+      m_Sprite: {fileID: 1968349443, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1968349443, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_411
+      m_Hash: -1111710599
+      m_Sprite: {fileID: -337756220, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -337756220, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_412
+      m_Hash: 615904707
+      m_Sprite: {fileID: -877829428, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -877829428, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_413
+      m_Hash: 1404224853
+      m_Sprite: {fileID: -1103824032, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1103824032, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_414
+      m_Hash: -841592586
+      m_Sprite: {fileID: -1885224972, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1885224972, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    - m_Name: truck_sprites_415
+      m_Hash: -1160683424
+      m_Sprite: {fileID: 977447760, guid: 50194157adc6b374282759360dad29c4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 977447760, guid: 50194157adc6b374282759360dad29c4, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 416
+  m_PrimaryLibraryGUID: 
