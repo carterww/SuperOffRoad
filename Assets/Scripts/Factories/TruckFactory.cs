@@ -31,7 +31,7 @@ public class TruckFactory
         TruckController controller = newTruck.GetComponent<TruckController>();
 
         // set implementation of truck controls to an NPC
-        controller.SetController(new NPCTruckController());
+        controller.SetController(new NPCTruckController(controller));
 
         // TODO implement to where the truck gets moved to correct starting position and color
         return newTruck;
