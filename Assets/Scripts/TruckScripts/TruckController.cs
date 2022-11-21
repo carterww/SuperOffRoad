@@ -1,15 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 // TODO: Flip downhill animation for going up hill through a function
 
 // Attached to Truck object
 public class TruckController : MonoBehaviour
 {
+    public const int MAX_LAP_COUNT = 5;
+    
     // DELETE THIS -- only for testing, set in Unity inspector
     // Actual factory method should be used
     public bool setPlayer;
+
+    public int lapCount = 1;
+    public int nitroCount = 25;
+    public bool c1, c2 = false;  // checkpoints that get set to true with collision on triggers
 
     Animator animator;
     bool upHill = false;
@@ -189,5 +196,22 @@ public class TruckController : MonoBehaviour
             }
         }
         return dists;
+    }
+
+    public void incrementLapCount()
+    {
+        this.lapCount++;
+        c1 = c2 = false;
+
+        if (lapCount >= MAX_LAP_COUNT)
+        {
+            // Add logic for finishing race
+            Debug.Log("Race should be finished");
+        }
+    }
+
+    public void incrementNitroCount()
+    {
+        nitroCount += 1;
     }
 }
