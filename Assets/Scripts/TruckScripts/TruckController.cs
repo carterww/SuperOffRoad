@@ -36,12 +36,13 @@ public class TruckController : MonoBehaviour
     Vector2 facing = new Vector2(-1, 0);
     Vector2 velocity = new Vector2();
     // modular friction based on velocity vector components, gives smoother turn transition than orbit-based steering
-    float frictionCoeffForward = 2f; // front-back friction, aka if you pushed a car forwards
+    float frictionCoeffForward; // front-back friction, aka if you pushed a car forwards
     float frictionCoeffLateral = 5f; // side-to-side friction, aka if you pushed a car from the side
     float maxAccel = 8f;
     float maxTurnSpeed = 4f; // radians per second
     float wallBounce = 0.5f; // amount to push the truck off the wall, proportional to velocity
     float truckBounce = 1.0f; // amount to bump trucks away from each other, proportional to velocity
+    bool prevNitro = false;
 
     /* 
     TODO: maximum speed is constrained by maxAccel and frictionCoeffForward from the 
@@ -81,7 +82,7 @@ public class TruckController : MonoBehaviour
         Vector2 position = rigidBody2D.position;
 
         float dt = Time.fixedDeltaTime;
-        (float accel, float turn) control = implementation.Control();
+        (float accel, float turn, bool nitro) control = implementation.Control();
         /*
         // First pass, before steering
         Vector2 engineAccel = facing * control.accel * maxAccel;
@@ -127,6 +128,46 @@ public class TruckController : MonoBehaviour
         Vector2 frictionLateral = (velocity - prevVelForward) * -frictionCoeffLateral;
         // Euler-Cromer
         velocity = velocity + (engineAccel + frictionForward + frictionLateral) * dt;
+
+
+
+        //Nitro handling
+        if (control.nitro)
+        {
+            if (!prevNitro)
+            {
+                nitroCount--;
+                //velocity = velocity + facing * (int)Math.Min(5f, Math.Max(0, 4f / prevVelForward.magnitude + 1) );
+                //velocity = velocity + facing * (float)Math.Max(0, (4.2 - 0.08 * Math.Pow(prevVelForward.magnitude - 2, 2)));
+                //velocity = velocity + facing * (float)Math.Max(0, 4 - (prevVelForward.magnitude / 2.5));
+                velocity = velocity + facing * (float)Math.Max(0, 4.4 - (prevVelForward.magnitude / 2.5) - 0.02 * Math.Pow(prevVelForward.magnitude - 6, 2));
+                if (velocity.magnitude > 9.5f) //hard speed cap
+                {
+                    velocity *= 9.5f / velocity.magnitude;
+                }
+                prevNitro = true;
+                frictionCoeffForward = 0f;
+            }
+        }
+        else
+        {
+            prevNitro = false;
+        }
+
+        //we don't want to slow down to original speed. So if we surpass normal speed cap reduce friction
+        //TODO: mathmatically sound way to maintain speed?
+        if (prevVelForward.magnitude > 4.1)
+        {
+            //frictionCoeffForward = Math.Max(6 / (float)Math.Pow(prevVelForward.magnitude, 2), 1.0f);
+            frictionCoeffForward = Math.Max(8 / prevVelForward.magnitude, 1.05f);
+        }
+        else
+        {
+            frictionCoeffForward = 2f;
+        }
+
+
+       
         rigidBody2D.MovePosition(position + velocity * dt);
     }
 

@@ -13,5 +13,5 @@ public abstract class TruckControllerImp
     public abstract void Update();
 
     // Determines the acceleration and steering direction for the truck
-    public abstract (float, float) Control();
+    public abstract (float, float, bool) Control();
 }
