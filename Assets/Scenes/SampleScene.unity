@@ -692,6 +692,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &616958704 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2333841451692145119, guid: 6f7d2164d819e6d4e9246a913398cc00, type: 3}
+  m_PrefabInstance: {fileID: 1846403033}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &616958705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616958704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CategoryHash: 0
+  m_labelHash: 0
+  m_SpriteKey: -1.3421455e-31
+--- !u!114 &616958706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616958704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library: []
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 07a5f65f2e30e6a49acd8d1e79ddb046, type: 3}
 --- !u!1001 &743122263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1052,6 +1086,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6126853176044909880, guid: 6f7d2164d819e6d4e9246a913398cc00, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2049437083, guid: 6a08d4fafc0cf7f43a616303db3c6cfa, type: 3}
+    - target: {fileID: 6126853176044909880, guid: 6f7d2164d819e6d4e9246a913398cc00, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -1062,6 +1100,14 @@ PrefabInstance:
     - target: {fileID: 6126853176044909880, guid: 6f7d2164d819e6d4e9246a913398cc00, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6126853176044909880, guid: 6f7d2164d819e6d4e9246a913398cc00, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6126853176044909880, guid: 6f7d2164d819e6d4e9246a913398cc00, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8231269645665248468, guid: 6f7d2164d819e6d4e9246a913398cc00, type: 3}
       propertyPath: setPlayer
