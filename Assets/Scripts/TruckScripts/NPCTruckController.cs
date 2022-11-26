@@ -30,7 +30,7 @@ public class NPCTruckController : TruckControllerImp
     }
 
     // Determines the acceleration and steering direction for the truck
-    public override (float, float) Control()
+    public override (float, float, bool) Control()
     {
         // Perform raycasts
         float[] dists = truck.ForwardRaycast();
@@ -39,6 +39,6 @@ public class NPCTruckController : TruckControllerImp
                       (new Vector2(0, 1) * dists[2] * biasForward) +
                       (new Vector2(0.707f, 0.707f) * dists[3] * biasQuarter) +
                       (new Vector2(1, 0) * dists[4] * biasLateral);
-        return (1f, -sum.normalized.x);
+        return (1f, -sum.normalized.x, false);
     }
 }
