@@ -13,7 +13,7 @@ public class TruckController : MonoBehaviour
     public const int MAX_LAP_COUNT = 5;
 
     public int lapCount;
-    public int nitroCount = 10;
+    public int nitroCount;
     public int money = 0;
     public bool c1, c2 = false;  // checkpoints that get set to true with collision on triggers
 

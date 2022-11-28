@@ -101,9 +101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ba8b24c75eaffa48ab6c685efad64ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setPlayer: 1
   lapCount: 1
-  nitroCount: 25
+  nitroCount: 10
+  money: 0
   c1: 0
   c2: 0
 --- !u!114 &5386429541833957066
