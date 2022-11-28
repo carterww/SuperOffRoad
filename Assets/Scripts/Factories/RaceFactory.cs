@@ -16,8 +16,11 @@ public class RaceFactory
 
     public Race MakeRace()
     {
-        string trackPath = "prefabs/" + ChooseTrack();
-        return new Race((GameObject)Resources.Load(trackPath, typeof(GameObject)));
+        string trackPath = ChooseTrack();
+        GameObject r = GameObject.Instantiate((GameObject)Resources.Load(trackPath, typeof(GameObject))) as GameObject;
+        r.name = trackPath;
+        Debug.Log("made race");
+        return new Race(r);
     }
 
     private string ChooseTrack()

@@ -8,6 +8,12 @@ public class Score
 
     public int place;
 
+    public Score(float t, int place)
+    {
+        this.time = t;
+        this.place = place;
+    }
+
     public float GetTime() { return time; }
 
     public void SetTime(float t) { this.time = t; }

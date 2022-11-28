@@ -10,7 +10,7 @@ public class Scoreboard : MonoBehaviour
     private bool _raceStarted = true;
     public Text text;
 
-    float RaceTime;
+    public float RaceTime;
 
     // Start is called before the first frame update
     void Start()
@@ -27,18 +27,5 @@ public class Scoreboard : MonoBehaviour
         }
         text.text = RaceTime.ToString("0.00");
 
-    }
-
-    // handles the event OnRaceStart and simply starts timer and adds lap and nitro counnt
-    private void StartTimer_OnRaceStart(object sender, OnRaceStartEventArgs e)
-    {
-        _raceStarted = true;
-        /*foreach (GameObject truck in e.trucks)
-        {
-            _lapCounters.Add(truck, 1);
-
-            // TODO grab nitro count from truckcontroller
-            _nitroCounters.Add(truck, 1);
-        }*/
     }
 }
