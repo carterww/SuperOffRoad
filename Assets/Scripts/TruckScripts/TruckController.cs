@@ -76,39 +76,6 @@ public class TruckController : MonoBehaviour
 
         float dt = Time.fixedDeltaTime;
         (float accel, float turn, bool nitro) control = implementation.Control();
-        /*
-        // First pass, before steering
-        Vector2 engineAccel = facing * control.accel * maxAccel;
-        Vector2 friction = velocity * -frictionCoeff;
-        velocity = velocity + (engineAccel + friction) * dt;
-        // Speed clamping
-        if (velocity.magnitude > maxSpeed)
-        {
-            velocity = velocity.normalized * maxSpeed;
-        }
-        // Steering
-        Vector2 turnAccel = new Vector2();
-        if (!Mathf.Approximately(control.turn, 0.0f))
-        {
-            // using orbit mechanics, a = v^2 / R
-            // TODO: R needs to be a function of the absolute value of control.turn, unless analog steering is not implemented
-            // R should get bigger as control.turn gets closer to zero, and smaller when control.turn approaches 1 or -1
-            float R = 0.8f;
-            float orbit = (velocity.magnitude * velocity.magnitude) / R;
-            turnAccel = Vector2.Perpendicular(facing) * Mathf.Sign(control.turn) * orbit;
-        }
-        // Second pass
-        velocity = velocity + turnAccel * dt;
-        // Position update
-        rigidBody2D.MovePosition(new Vector2(velocity.x * dt, velocity.y * dt) + position);
-        //transform.Translate(velocity.x * dt, velocity.y * dt, 0);
-        
-        // Updating new facing direction
-        if (velocity.magnitude > 0.01f) // prevents facing from becoming a zero vector
-        {
-            facing = velocity.normalized;
-        }
-        */
 
         // Update facing position from steering
         float dtheta = control.turn * maxTurnSpeed * dt;
@@ -119,15 +86,13 @@ public class TruckController : MonoBehaviour
         Vector2 prevVelForward = Vector2.Dot(velocity, facing) * facing;
         Vector2 frictionForward = prevVelForward * -frictionCoeffForward;
         Vector2 frictionLateral = (velocity - prevVelForward) * -frictionCoeffLateral;
-        // Euler-Cromer
+        // Euler-Cromer velocity
         velocity = velocity + (engineAccel + frictionForward + frictionLateral) * dt;
-
-
 
         //Nitro handling
         if (control.nitro)
         {
-            if (!prevNitro)
+            if (!prevNitro && nitroCount > 0)
             {
                 nitroCount--;
                 //velocity = velocity + facing * (int)Math.Min(5f, Math.Max(0, 4f / prevVelForward.magnitude + 1) );
@@ -159,8 +124,7 @@ public class TruckController : MonoBehaviour
             frictionCoeffForward = 2f;
         }
 
-
-       
+        // Euler-Cromer position
         rigidBody2D.MovePosition(position + velocity * dt);
     }
 
@@ -244,10 +208,5 @@ public class TruckController : MonoBehaviour
             Season s = Season.GetInstance();
             s.RaceEnds(gameObject, time);
         }
-    }
-
-    public void incrementNitroCount()
-    {
-        nitroCount += 1;
     }
 }
