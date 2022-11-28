@@ -15,7 +15,8 @@ public class TruckController : MonoBehaviour
     public bool setPlayer;
 
     public int lapCount = 1;
-    public int nitroCount = 25;
+    public int nitroCount = 10;
+    public int money = 0;
     public bool c1, c2 = false;  // checkpoints that get set to true with collision on triggers
 
     Animator animator;
@@ -174,7 +175,7 @@ public class TruckController : MonoBehaviour
     // Called when the truck enters a collision area
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.collider) {
+        if (col.collider && col.rigidbody) {
             if (col.collider is EdgeCollider2D) {
                 // truck has hit a wall, bounce off normal!
                 Vector2 normal = col.GetContact(0).normal;
