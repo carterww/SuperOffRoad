@@ -39,11 +39,11 @@ public class Season
 
         for (int i = 0; i < 1; i++)
         {
-            season.trucks.Add(truckFactory.MakePlayerTruck());
+            season.trucks.Insert(i, truckFactory.MakePlayerTruck());
         }
-        for (int i = 0; i < 3; i++)
+        for (int i = 1; i < 4; i++)
         {
-            season.trucks.Add(truckFactory.MakeNPCTruck());
+            season.trucks.Insert(i, truckFactory.MakeNPCTruck());
         }
 
         season.currentRace = raceFactory.MakeRace();
@@ -110,7 +110,7 @@ public class Season
         {
             season.trucks.Insert(i, truckFactory.MakeExistingPlayerTruck(season.trucks_data[i]));
         }
-        for (int i = 0; i < 3; i++)
+        for (int i = 1; i < 4; i++)
         {
             season.trucks.Insert(i, truckFactory.MakeExistingNPCTruck(season.trucks_data[i]));
         }
