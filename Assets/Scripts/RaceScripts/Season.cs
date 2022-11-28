@@ -124,10 +124,10 @@ public class Season
 
 public class PersistentTruckData
 {
-    public float money;
+    public int money;
     public int nitroCount;
 
-    public PersistentTruckData(float m, int n)
+    public PersistentTruckData(int m, int n)
     {
         this.money = m;
         this.nitroCount = n;
