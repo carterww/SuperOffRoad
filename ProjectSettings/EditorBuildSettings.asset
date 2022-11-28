@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/CreateAccountScene.unity
+    guid: 5c0e221a414d03e448a3d095d712970a
+  - enabled: 1
+    path: Assets/Scenes/LoginScene.unity
+    guid: 4b3d84413fdbe2a45997d105decef0c3
+  - enabled: 1
+    path: Assets/Scenes/ShopScene.unity
+    guid: 5cb7585191a64224ca19d3c6c62f4550
+  - enabled: 1
+    path: Assets/Scenes/PostRaceScene.unity
+    guid: 98d34692210ad534b932d00a8a0f1853
   m_configObjects: {}

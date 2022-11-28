@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace RaceScripts {
 
@@ -16,8 +18,9 @@ public class Season
 
     List<Race> raceHistory = new List<Race>(maxNumOfRaces);
 
-    Race currentRace = null;
-    List<GameObject> trucks = new List<GameObject>(4);
+    public Race currentRace = null;
+    public List<GameObject> trucks = new List<GameObject>(4);
+    public List<PersistentTruckData> trucks_data = new List<PersistentTruckData>();
 
     private Season() {}
 
@@ -29,29 +32,106 @@ public class Season
         return season;
     }
 
-    private void StartSeason_OnSeasonStart(object sender, OnSeasonStartEventArgs e)
+    public void StartSeason()
     {
         TruckFactory truckFactory = new TruckFactory();
         RaceFactory raceFactory = new RaceFactory();
 
-        for (int i = 0; i < e.numOfPlayers; i++)
+        for (int i = 0; i < 1; i++)
         {
-            trucks.Add(truckFactory.MakePlayerTruck());
+            season.trucks.Add(truckFactory.MakePlayerTruck());
         }
-        for (int i = 0; i < (4 - e.numOfPlayers); i++)
+        for (int i = 0; i < 3; i++)
         {
-            trucks.Add(truckFactory.MakeNPCTruck());
+            season.trucks.Add(truckFactory.MakeNPCTruck());
         }
 
-        this.currentRace = raceFactory.MakeRace();
+        season.currentRace = raceFactory.MakeRace();
+    }
+
+    public void RaceEnds(GameObject truck, float time)
+    {
+        SceneManager.LoadScene("PostRaceScene");
+        List<Score> scores = new List<Score>();
+
+        if (truck.name == "Truck")
+        {
+            scores.Add(new Score(time, 1));
+            scores.Add(new Score(0f, 2));
+            scores.Add(new Score(0f, 2));
+            scores.Add(new Score(0f, 2));
+        }
+        else if (truck.name == "Truck (1)")
+        {
+            scores.Add(new Score(0f, 2));
+            scores.Add(new Score(time, 1));
+            scores.Add(new Score(0f, 2));
+            scores.Add(new Score(0f, 2));
+        }
+        else if (truck.name == "Truck (2)")
+        {
+            scores.Add(new Score(0f, 2));
+            scores.Add(new Score(0f, 2));
+            scores.Add(new Score(time, 1));
+            scores.Add(new Score(0f, 2));
+        }
+        else if (truck.name == "Truck (3)")
+        {
+            scores.Add(new Score(0f, 2));
+            scores.Add(new Score(0f, 2));
+            scores.Add(new Score(0f, 2));
+            scores.Add(new Score(time, 1));
+        }
+
+        currentRace.RaceFinish(scores);
+
+        for (int i = 0; i < 4; i++)
+        {
+            TruckController comp = season.trucks[i].GetComponent<TruckController>();
+            season.trucks_data.Insert(i, new PersistentTruckData(comp.money, comp.nitroCount));
+
+            GameObject.Destroy(season.trucks[i]);
+        }
+        GameObject.Destroy(season.currentRace.track);
 
     }
 
     public void AddRace(Race r) 
     {
-        raceHistory.Add(r);
+        season.raceHistory.Add(r);
     }
 
+    public void StartNewRace()
+    {
+        TruckFactory truckFactory = new TruckFactory();
+        RaceFactory raceFactory = new RaceFactory();
+
+        for (int i = 0; i < 1; i++)
+        {
+            season.trucks.Insert(i, truckFactory.MakeExistingPlayerTruck(season.trucks_data[i]));
+        }
+        for (int i = 0; i < 3; i++)
+        {
+            season.trucks.Insert(i, truckFactory.MakeExistingNPCTruck(season.trucks_data[i]));
+        }
+
+        season.currentRace = raceFactory.MakeRace();
+
+        SceneManager.LoadScene("SampleScene");
+    }
+
+}
+
+public class PersistentTruckData
+{
+    public int money;
+    public int nitroCount;
+
+    public PersistentTruckData(int m, int n)
+    {
+        this.money = m;
+        this.nitroCount = n;
+    }
 }
 
 }

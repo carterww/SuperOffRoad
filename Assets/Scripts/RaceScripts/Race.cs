@@ -7,16 +7,19 @@ namespace RaceScripts {
 
 public class Race
 {
-    GameObject track;
+    public GameObject track;
     public Dictionary<GameObject, Score> scores = new Dictionary<GameObject, Score>();
 
     // Subscriber to event OnRaceFinish and takes a dictionary of <GameObject(Truck), Score>
     // Score contains the time and placement of the truck
-    private void WriteRace_OnRaceFinish(object sender, OnRaceFinishEventArgs e)
+    public void RaceFinish(List<Score> s)
     {
-        this.scores = e.scores;
-        Season s = Season.GetInstance();
-        s.AddRace(this);
+        Season se = Season.GetInstance();
+        for (int i = 0; i < 4; i++)
+        {
+            this.scores.Add(se.trucks[i], s[i]);
+        }
+        se.AddRace(this);
     }
 
     public Race(GameObject t) {

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
+using RaceScripts;
 
 // TODO: Flip downhill animation for going up hill through a function
 
@@ -9,13 +11,10 @@ using System;
 public class TruckController : MonoBehaviour
 {
     public const int MAX_LAP_COUNT = 5;
-    
-    // DELETE THIS -- only for testing, set in Unity inspector
-    // Actual factory method should be used
-    public bool setPlayer;
 
-    public int lapCount = 1;
-    public int nitroCount = 25;
+    public int lapCount;
+    public int nitroCount;
+    public int money = 0;
     public bool c1, c2 = false;  // checkpoints that get set to true with collision on triggers
 
     Animator animator;
@@ -57,12 +56,6 @@ public class TruckController : MonoBehaviour
         animator.SetFloat("X", -1.0f); animator.SetFloat("Y", 0.0f);
         rigidBody2D = GetComponent<Rigidbody2D>();
 
-        // Hard coded variable for testing
-        if (setPlayer) {
-            implementation = new PlayerTruckController();
-        } else {
-            implementation = new NPCTruckController(this);
-        }
         implementation.Start();
     }
 
@@ -174,7 +167,7 @@ public class TruckController : MonoBehaviour
     // Called when the truck enters a collision area
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.collider) {
+        if (col.collider && col.rigidbody) {
             if (col.collider is EdgeCollider2D) {
                 // truck has hit a wall, bounce off normal!
                 Vector2 normal = col.GetContact(0).normal;
@@ -247,7 +240,9 @@ public class TruckController : MonoBehaviour
         if (lapCount >= MAX_LAP_COUNT)
         {
             // Add logic for finishing race
-            Debug.Log("Race should be finished");
+            float time = GameObject.Find("Timer").GetComponent<Scoreboard>().RaceTime;
+            Season s = Season.GetInstance();
+            s.RaceEnds(gameObject, time);
         }
     }
 
