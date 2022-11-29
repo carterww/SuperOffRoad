@@ -25,5 +25,6 @@ public class FlagButton : MonoBehaviour
         Season s = Season.GetInstance();
         SceneManager.LoadScene("SampleScene");
         s.StartSeason();
+        s.trucks[0].GetComponent<TruckController>().flagId = this.flagId;
     }
 }

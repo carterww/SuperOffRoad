@@ -15,6 +15,7 @@ public class TruckController : MonoBehaviour
     public int nitroCount;
     public int money = 0;
     private int[] upgrades = {0, 0, 0, 0, 0};
+    public int flagId = -1;
 
     public int lapCount;
     public bool c1, c2 = false;  // checkpoints that get set to true with collision on triggers

@@ -88,7 +88,7 @@ public class Season
         for (int i = 0; i < 4; i++)
         {
             TruckController comp = season.trucks[i].GetComponent<TruckController>();
-            season.trucks_data.Insert(i, new PersistentTruckData(comp.money, comp.nitroCount, comp.GetUpgrades()));
+            season.trucks_data.Insert(i, new PersistentTruckData(comp.money, comp.nitroCount, comp.GetUpgrades(), comp.flagId));
 
             GameObject.Destroy(season.trucks[i]);
         }
@@ -127,12 +127,14 @@ public class PersistentTruckData
     public int money;
     public int nitroCount;
     public int[] upgrades;
+    public int flagId;
 
-    public PersistentTruckData(int m, int n, int[] u)
+    public PersistentTruckData(int m, int n, int[] u, int f)
     {
         this.money = m;
         this.nitroCount = n;
         this.upgrades = u;
+        this.flagId = f;
     }
 }
 

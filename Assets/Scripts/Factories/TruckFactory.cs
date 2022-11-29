@@ -47,6 +47,7 @@ public class TruckFactory
         controller.money = data.money;
         controller.nitroCount = data.nitroCount;
         controller.SetUpgrades(data.upgrades);
+        controller.flagId = data.flagId;
 
         //Debug.Log(truck.name);
         //Debug.Log(controller.money);
