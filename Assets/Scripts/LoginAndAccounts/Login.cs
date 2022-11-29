@@ -19,16 +19,39 @@ public class Login : MonoBehaviour{
         btn.onClick.AddListener(TaskOnClick);
     }
 
-    void TaskOnClick(){
-        Debug.Log("Checking username and password");
-        //if(usernameBox.GetComponent<TMP_InputField>().text.Equals("username") && passwordBox.GetComponent<TMP_InputField>().text.Equals("password")){//temporary ofc, will need to check the database instead
-            Debug.Log("Username and password accepted for user " + usernameBox.GetComponent<TMP_InputField>().text);
+    private bool is_alphanumeric(string val) {
+        for (int c = 0; c < val.Length; c++) if (!char.IsLetterOrDigit(val[c])) return false;
+        return true;
+    }
 
-            StartGame();
-            //s.InstantiateGameObjects();
-        //}else{
-            Debug.Log("Password does not match with username " + usernameBox.GetComponent<TMP_InputField>().text);
-        //}
+    void TaskOnClick(){
+
+        string username = usernameBox.GetComponent<TMP_InputField>().text;
+        string password = passwordBox.GetComponent<TMP_InputField>().text;
+
+        if (!is_alphanumeric(username) || !is_alphanumeric(password)) {
+            Debug.Log("Username and password must be alphanumeric.");
+            return;
+        }
+
+        if (username.Length > 16) {
+            Debug.Log("Username has a maximum length of 16 characters.");
+            return;
+        }
+
+        DatabaseSingleton db = GameObject.Find("Database").GetComponent<DatabaseSingleton>();
+
+        bool res = db.LoginUser(username, password);
+
+        if (!res) {
+            Debug.Log("There is no account with that username and password.");
+            return;
+        }
+
+        Debug.Log("Logged in as " + username + ".");
+
+        StartGame();
+        //s.InstantiateGameObjects();
     }
     
     void StartGame()
