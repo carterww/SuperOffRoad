@@ -49,6 +49,8 @@ public class TruckController : MonoBehaviour
     Need to determine best method for upgrading speed separately from acceleration
     */ 
 
+    public int[] upgrades = {0, 0, 0, 0, 0};
+
     // Called before the first frame update
     void Start()
     {
