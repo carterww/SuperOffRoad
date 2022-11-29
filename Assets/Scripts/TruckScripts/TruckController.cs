@@ -12,9 +12,11 @@ public class TruckController : MonoBehaviour
 {
     public const int MAX_LAP_COUNT = 5;
 
-    public int lapCount;
     public int nitroCount;
     public int money = 0;
+    private int[] upgrades = {0, 0, 0, 0, 0};
+
+    public int lapCount;
     public bool c1, c2 = false;  // checkpoints that get set to true with collision on triggers
 
     Animator animator;
@@ -24,17 +26,10 @@ public class TruckController : MonoBehaviour
     TruckControllerImp implementation;
 
     // Physics variables, will need fine tuning
-    /*Vector2 facing = new Vector2(-1, 0);
-    float ySquash = 1.0f;
-    Vector2 velocity = new Vector2();
-    float frictionCoeff = 2.5f;
-    float maxSpeed = 3f;
-    float maxAccel = 8f;
-    //float slipSpeed = 1.8f;
-    */
     Vector2 facing = new Vector2(-1, 0);
     Vector2 velocity = new Vector2();
     // modular friction based on velocity vector components, gives smoother turn transition than orbit-based steering
+    float frictionCoeffForwardOriginal = 2f; // front-back friction, aka if you pushed a car forwards (original)
     float frictionCoeffForward; // front-back friction, aka if you pushed a car forwards
     float frictionCoeffLateral = 5f; // side-to-side friction, aka if you pushed a car from the side
     float maxAccel = 8f;
@@ -48,8 +43,6 @@ public class TruckController : MonoBehaviour
     differential equation: dv/dt = a_max - f*v
     Need to determine best method for upgrading speed separately from acceleration
     */ 
-
-    public int[] upgrades = {0, 0, 0, 0, 0};
 
     // Called before the first frame update
     void Start()
@@ -123,7 +116,7 @@ public class TruckController : MonoBehaviour
         }
         else
         {
-            frictionCoeffForward = 2f;
+            frictionCoeffForward = frictionCoeffForwardOriginal;
         }
 
         // Euler-Cromer position
@@ -210,5 +203,22 @@ public class TruckController : MonoBehaviour
             Season s = Season.GetInstance();
             s.RaceEnds(gameObject, time);
         }
+    }
+
+    public void SetUpgrades(int[] newUpgrades)
+    {
+        upgrades = newUpgrades;
+
+        // Accel (index 0)
+        maxAccel = 8f + (upgrades[0] * 2f);
+        // Tires (index 1)
+        frictionCoeffLateral = 5f + (1f * upgrades[1]);
+        // Speed (index 2)
+        // Shocks (index 3)
+    }
+
+    public int[] GetUpgrades()
+    {
+        return upgrades;
     }
 }

@@ -46,12 +46,12 @@ public class TruckFactory
 
         controller.money = data.money;
         controller.nitroCount = data.nitroCount;
-        controller.upgrades = data.upgrades;
+        controller.SetUpgrades(data.upgrades);
 
-        Debug.Log(truck.name);
-        Debug.Log(controller.money);
-        Debug.Log(controller.nitroCount);
-        Debug.Log($"{controller.upgrades[0]}, {controller.upgrades[1]}, {controller.upgrades[2]}, {controller.upgrades[3]}, {controller.upgrades[4]}");
+        //Debug.Log(truck.name);
+        //Debug.Log(controller.money);
+        //Debug.Log(controller.nitroCount);
+        //Debug.Log($"{controller.upgrades[0]}, {controller.upgrades[1]}, {controller.upgrades[2]}, {controller.upgrades[3]}, {controller.upgrades[4]}");
 
         return truck;
     }
