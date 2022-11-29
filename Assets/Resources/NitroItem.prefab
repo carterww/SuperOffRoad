@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 260a71169c5340b4dad70b7dcf89aa41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  popupPrefab: {fileID: 3266715104522936705, guid: 802cd2c15c990bf4ba267ba8a1f196ff, type: 3}
 --- !u!61 &6743044055002598693
 BoxCollider2D:
   m_ObjectHideFlags: 0

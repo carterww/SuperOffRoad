@@ -12,9 +12,12 @@ public class TruckController : MonoBehaviour
 {
     public const int MAX_LAP_COUNT = 5;
 
-    public int lapCount;
     public int nitroCount;
     public int money = 0;
+    private int[] upgrades = {0, 0, 0, 0, 0};
+    public int flagId = -1;
+
+    public int lapCount;
     public bool c1, c2 = false;  // checkpoints that get set to true with collision on triggers
 
     Animator animator;
@@ -24,17 +27,10 @@ public class TruckController : MonoBehaviour
     TruckControllerImp implementation;
 
     // Physics variables, will need fine tuning
-    /*Vector2 facing = new Vector2(-1, 0);
-    float ySquash = 1.0f;
-    Vector2 velocity = new Vector2();
-    float frictionCoeff = 2.5f;
-    float maxSpeed = 3f;
-    float maxAccel = 8f;
-    //float slipSpeed = 1.8f;
-    */
     Vector2 facing = new Vector2(-1, 0);
     Vector2 velocity = new Vector2();
     // modular friction based on velocity vector components, gives smoother turn transition than orbit-based steering
+    float frictionCoeffForwardOriginal = 2f; // front-back friction, aka if you pushed a car forwards (original)
     float frictionCoeffForward; // front-back friction, aka if you pushed a car forwards
     float frictionCoeffLateral = 5f; // side-to-side friction, aka if you pushed a car from the side
     float maxAccel = 8f;
@@ -76,39 +72,6 @@ public class TruckController : MonoBehaviour
 
         float dt = Time.fixedDeltaTime;
         (float accel, float turn, bool nitro) control = implementation.Control();
-        /*
-        // First pass, before steering
-        Vector2 engineAccel = facing * control.accel * maxAccel;
-        Vector2 friction = velocity * -frictionCoeff;
-        velocity = velocity + (engineAccel + friction) * dt;
-        // Speed clamping
-        if (velocity.magnitude > maxSpeed)
-        {
-            velocity = velocity.normalized * maxSpeed;
-        }
-        // Steering
-        Vector2 turnAccel = new Vector2();
-        if (!Mathf.Approximately(control.turn, 0.0f))
-        {
-            // using orbit mechanics, a = v^2 / R
-            // TODO: R needs to be a function of the absolute value of control.turn, unless analog steering is not implemented
-            // R should get bigger as control.turn gets closer to zero, and smaller when control.turn approaches 1 or -1
-            float R = 0.8f;
-            float orbit = (velocity.magnitude * velocity.magnitude) / R;
-            turnAccel = Vector2.Perpendicular(facing) * Mathf.Sign(control.turn) * orbit;
-        }
-        // Second pass
-        velocity = velocity + turnAccel * dt;
-        // Position update
-        rigidBody2D.MovePosition(new Vector2(velocity.x * dt, velocity.y * dt) + position);
-        //transform.Translate(velocity.x * dt, velocity.y * dt, 0);
-        
-        // Updating new facing direction
-        if (velocity.magnitude > 0.01f) // prevents facing from becoming a zero vector
-        {
-            facing = velocity.normalized;
-        }
-        */
 
         // Update facing position from steering
         float dtheta = control.turn * maxTurnSpeed * dt;
@@ -119,15 +82,13 @@ public class TruckController : MonoBehaviour
         Vector2 prevVelForward = Vector2.Dot(velocity, facing) * facing;
         Vector2 frictionForward = prevVelForward * -frictionCoeffForward;
         Vector2 frictionLateral = (velocity - prevVelForward) * -frictionCoeffLateral;
-        // Euler-Cromer
+        // Euler-Cromer velocity
         velocity = velocity + (engineAccel + frictionForward + frictionLateral) * dt;
-
-
 
         //Nitro handling
         if (control.nitro)
         {
-            if (!prevNitro)
+            if (!prevNitro && nitroCount > 0)
             {
                 nitroCount--;
                 //velocity = velocity + facing * (int)Math.Min(5f, Math.Max(0, 4f / prevVelForward.magnitude + 1) );
@@ -156,11 +117,10 @@ public class TruckController : MonoBehaviour
         }
         else
         {
-            frictionCoeffForward = 2f;
+            frictionCoeffForward = frictionCoeffForwardOriginal;
         }
 
-
-       
+        // Euler-Cromer position
         rigidBody2D.MovePosition(position + velocity * dt);
     }
 
@@ -246,8 +206,20 @@ public class TruckController : MonoBehaviour
         }
     }
 
-    public void incrementNitroCount()
+    public void SetUpgrades(int[] newUpgrades)
     {
-        nitroCount += 1;
+        upgrades = newUpgrades;
+
+        // Accel (index 0)
+        maxAccel = 8f + (upgrades[0] * 2f);
+        // Tires (index 1)
+        frictionCoeffLateral = 5f + (1f * upgrades[1]);
+        // Speed (index 2)
+        // Shocks (index 3)
+    }
+
+    public int[] GetUpgrades()
+    {
+        return upgrades;
     }
 }

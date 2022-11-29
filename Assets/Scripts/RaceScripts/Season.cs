@@ -39,11 +39,11 @@ public class Season
 
         for (int i = 0; i < 1; i++)
         {
-            season.trucks.Add(truckFactory.MakePlayerTruck());
+            season.trucks.Insert(i, truckFactory.MakePlayerTruck());
         }
-        for (int i = 0; i < 3; i++)
+        for (int i = 1; i < 4; i++)
         {
-            season.trucks.Add(truckFactory.MakeNPCTruck());
+            season.trucks.Insert(i, truckFactory.MakeNPCTruck());
         }
 
         season.currentRace = raceFactory.MakeRace();
@@ -88,7 +88,7 @@ public class Season
         for (int i = 0; i < 4; i++)
         {
             TruckController comp = season.trucks[i].GetComponent<TruckController>();
-            season.trucks_data.Insert(i, new PersistentTruckData(comp.money, comp.nitroCount));
+            season.trucks_data.Insert(i, new PersistentTruckData(comp.money, comp.nitroCount, comp.GetUpgrades(), comp.flagId));
 
             GameObject.Destroy(season.trucks[i]);
         }
@@ -110,7 +110,7 @@ public class Season
         {
             season.trucks.Insert(i, truckFactory.MakeExistingPlayerTruck(season.trucks_data[i]));
         }
-        for (int i = 0; i < 3; i++)
+        for (int i = 1; i < 4; i++)
         {
             season.trucks.Insert(i, truckFactory.MakeExistingNPCTruck(season.trucks_data[i]));
         }
@@ -126,11 +126,15 @@ public class PersistentTruckData
 {
     public int money;
     public int nitroCount;
+    public int[] upgrades;
+    public int flagId;
 
-    public PersistentTruckData(int m, int n)
+    public PersistentTruckData(int m, int n, int[] u, int f)
     {
         this.money = m;
         this.nitroCount = n;
+        this.upgrades = u;
+        this.flagId = f;
     }
 }
 
