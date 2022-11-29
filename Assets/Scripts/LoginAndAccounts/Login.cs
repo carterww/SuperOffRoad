@@ -24,12 +24,18 @@ public class Login : MonoBehaviour{
         //if(usernameBox.GetComponent<TMP_InputField>().text.Equals("username") && passwordBox.GetComponent<TMP_InputField>().text.Equals("password")){//temporary ofc, will need to check the database instead
             Debug.Log("Username and password accepted for user " + usernameBox.GetComponent<TMP_InputField>().text);
 
-            Season s = Season.GetInstance();
-            SceneManager.LoadScene("SampleScene");
-            s.StartSeason();
+            StartGame();
             //s.InstantiateGameObjects();
         //}else{
             Debug.Log("Password does not match with username " + usernameBox.GetComponent<TMP_InputField>().text);
         //}
+    }
+    
+    void StartGame()
+    {
+        //Season s = Season.GetInstance();
+        //SceneManager.LoadScene("SampleScene");
+        //s.StartSeason();
+        SceneManager.LoadScene("SeasonStartScene");
     }
 }
