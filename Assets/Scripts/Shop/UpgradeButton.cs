@@ -7,6 +7,7 @@ using RaceScripts;
 public class UpgradeButton : MonoBehaviour
 {
     public int upgradeIndex;
+    public int price;
     
     GameObject pip1;
     GameObject pip2;
@@ -33,11 +34,12 @@ public class UpgradeButton : MonoBehaviour
 
     private void OnClick()
     {
+        if (season.trucks_data[0].money < price) return;
         if (season.trucks_data[0].upgrades[upgradeIndex] < 5) {
             season.trucks_data[0].upgrades[upgradeIndex]++;
+            season.trucks_data[0].money = season.trucks_data[0].money - price;
             FixPipBarValue(season.trucks_data[0].upgrades[upgradeIndex]);
-            Debug.Log($"Upgrades: {season.trucks_data[0].upgrades[0]}, {season.trucks_data[0].upgrades[1]}, {season.trucks_data[0].upgrades[2]}, {season.trucks_data[0].upgrades[3]}, {season.trucks_data[0].upgrades[4]}");
-
+            //Debug.Log($"Upgrades: {season.trucks_data[0].upgrades[0]}, {season.trucks_data[0].upgrades[1]}, {season.trucks_data[0].upgrades[2]}, {season.trucks_data[0].upgrades[3]}, {season.trucks_data[0].upgrades[4]}");
         }
     }
 
