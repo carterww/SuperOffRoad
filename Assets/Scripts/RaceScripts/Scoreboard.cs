@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// Displays timer to scoreboard
 public class Scoreboard : MonoBehaviour
 {
-    // starts timer 
     private bool _raceStarted = true;
     public Text text;
 
@@ -19,7 +19,7 @@ public class Scoreboard : MonoBehaviour
         this.text = GetComponent<Text>();
     }
 
-    // Update is called once per frame
+    // Update timer by adding time between frame
     void Update()
     {
         if (_raceStarted) {

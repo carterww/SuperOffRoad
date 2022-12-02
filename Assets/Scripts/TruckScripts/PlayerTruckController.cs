@@ -26,8 +26,7 @@ public class PlayerTruckController : TruckControllerImp
     // Update is called once per frame
     public override void Update()
     {
-        // TODO Could an else statement be used for each GetKeyUp since it is binary?
-        // Unfortunately not, GetKeyDown and GetKeyUp are only true on frames where the keystate has just changed
+        // Get user inputs and put in booleans to represent state of key
         if (Input.GetKeyDown(KeyCode.Z)) inputThrottle = true;
         if (Input.GetKeyUp(KeyCode.Z)) inputThrottle = false;
         if (Input.GetKeyDown(KeyCode.LeftArrow)) inputKeyLeft = true;
@@ -37,6 +36,7 @@ public class PlayerTruckController : TruckControllerImp
         if (Input.GetKeyDown(KeyCode.X)) inputKeyNitro = true; //we would do nitro for one frame, but it doesn't seem to read every time
         if (Input.GetKeyUp(KeyCode.X)) inputKeyNitro = false;
         inputDirection = 0.0f;
+        // set direction
         if (inputKeyLeft) inputDirection += 1;
         if (inputKeyRight) inputDirection -= 1;
     }

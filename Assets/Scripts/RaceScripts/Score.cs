@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Holds score information for a truck
 public class Score
 {
     private float time;

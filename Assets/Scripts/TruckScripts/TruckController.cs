@@ -5,13 +5,12 @@ using System;
 using UnityEngine.SceneManagement;
 using RaceScripts;
 
-// TODO: Flip downhill animation for going up hill through a function
-
 // Attached to Truck object
 public class TruckController : MonoBehaviour
 {
     public const int MAX_LAP_COUNT = 5;
 
+    /// persistent data for truck
     public int nitroCount;
     public int money = 0;
     private int[] upgrades = {0, 0, 0, 0, 0};
@@ -22,11 +21,13 @@ public class TruckController : MonoBehaviour
 
     Animator animator;
     bool upHill = false;
+
     Rigidbody2D rigidBody2D;
 
+    // Implementation abstraction for either getting inputs or raycasting
     TruckControllerImp implementation;
 
-    // Physics variables, will need fine tuning
+    // Physics variables
     Vector2 facing = new Vector2(-1, 0);
     Vector2 velocity = new Vector2();
     // modular friction based on velocity vector components, gives smoother turn transition than orbit-based steering
@@ -39,15 +40,9 @@ public class TruckController : MonoBehaviour
     float truckBounce = 1.0f; // amount to bump trucks away from each other, proportional to velocity
     bool prevNitro = false;
 
-    /* 
-    TODO: maximum speed is constrained by maxAccel and frictionCoeffForward from the 
-    differential equation: dv/dt = a_max - f*v
-    Need to determine best method for upgrading speed separately from acceleration
-    */ 
-
-    // Called before the first frame update
     void Start()
     {
+        // Get components
         animator = GetComponent<Animator>();
         animator.SetFloat("X", -1.0f); animator.SetFloat("Y", 0.0f);
         rigidBody2D = GetComponent<Rigidbody2D>();
@@ -192,6 +187,7 @@ public class TruckController : MonoBehaviour
         return dists;
     }
 
+    // Add to lapcount and check if truck finished
     public void incrementLapCount()
     {
         this.lapCount++;
@@ -199,9 +195,9 @@ public class TruckController : MonoBehaviour
 
         if (lapCount >= MAX_LAP_COUNT)
         {
-            // Add logic for finishing race
             float time = GameObject.Find("Timer").GetComponent<Scoreboard>().RaceTime;
             Season s = Season.GetInstance();
+            // finish race
             s.RaceEnds(gameObject, time);
         }
     }

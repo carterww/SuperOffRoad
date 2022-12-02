@@ -10,6 +10,7 @@ public class TriggerFinishLine : MonoBehaviour
     // Update is called once per frame
     void Update() {}
 
+    // Adds a lap to truck if truck went through both checkpoints in order
     void OnTriggerEnter2D(Collider2D other)
     {
         TruckController cont = other.GetComponent<TruckController>();

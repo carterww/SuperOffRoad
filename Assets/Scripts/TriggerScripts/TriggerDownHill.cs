@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Handles changing animation to downhill animation
 public class TriggerDownHill : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -16,6 +17,7 @@ public class TriggerDownHill : MonoBehaviour
         
     }
 
+    // switch blend tree bool to true for downhill
     void OnTriggerStay2D(Collider2D other) 
     {
         TruckController cont = other.GetComponent<TruckController>();
@@ -26,6 +28,8 @@ public class TriggerDownHill : MonoBehaviour
         }
     }
 
+    // switch blend tree bool to false
+    // switches back to default driving
     void OnTriggerExit2D(Collider2D other)
     {
         TruckController cont = other.GetComponent<TruckController>();

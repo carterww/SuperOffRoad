@@ -39,6 +39,7 @@ public class NPCTruckController : TruckControllerImp
                       (new Vector2(0, 1) * dists[2] * biasForward) +
                       (new Vector2(0.707f, 0.707f) * dists[3] * biasQuarter) +
                       (new Vector2(1, 0) * dists[4] * biasLateral);
+        // return truck's direction
         return (1f, -sum.normalized.x, false);
     }
 }

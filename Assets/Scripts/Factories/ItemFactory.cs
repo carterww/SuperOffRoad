@@ -4,6 +4,10 @@ using UnityEngine;
 
 using Random=System.Random;
 
+// Item Factory is responsible for spawning the nitro and money item pickups
+// It randomly chooses between the two, and spawns it in one of
+// many pre-determined locations
+// Items spawn 3 seconds after the race begins and the last item pickup
 public class ItemFactory : MonoBehaviour
 {
     public Vector2[] locations;
@@ -11,10 +15,10 @@ public class ItemFactory : MonoBehaviour
     private float t;
     private Random rand;
 
+    // prefabs for items
     public GameObject moneyItemPrefab;
     public GameObject nitroItemPrefab;
     
-    // Start is called before the first frame update
     void Start()
     {
         canPlace = locations.Length > 0;
@@ -25,7 +29,6 @@ public class ItemFactory : MonoBehaviour
         Debug.Log(nitroItemPrefab);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (canPlace) {
@@ -63,6 +66,7 @@ public class ItemFactory : MonoBehaviour
         it.transform.position = loc;
     }
 
+    // Once collected, resets variables that dictate whether item can spawn
     public void onCollected(Item item)
     {
         if (item != null && !canPlace) {        

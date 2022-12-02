@@ -10,12 +10,14 @@ public class TriggerCheckpoint1 : MonoBehaviour
     // Update is called once per frame
     void Update() {}
 
+    // Called when truck reaches the first checkpoint
     void OnTriggerEnter2D(Collider2D other)
     {
         TruckController cont = other.GetComponent<TruckController>();
 
         if (cont != null)
         {
+            // reset checkpoints if truck is going backwards
             if (cont.c2)
             {
                 cont.c1 = false;

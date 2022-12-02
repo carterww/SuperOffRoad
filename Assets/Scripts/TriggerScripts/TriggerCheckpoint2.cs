@@ -10,6 +10,7 @@ public class TriggerCheckpoint2 : MonoBehaviour
     // Update is called once per frame
     void Update() {}
 
+    // Called when truck passes through second checkpoint
     void OnTriggerEnter2D(Collider2D other)
     {
         TruckController cont = other.GetComponent<TruckController>();

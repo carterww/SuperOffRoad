@@ -16,6 +16,7 @@ public class TriggerUpHill : MonoBehaviour
         
     }
 
+    // switches animation to uphill by setting bool in blend tree to true
     void OnTriggerStay2D(Collider2D other) 
     {
         TruckController cont = other.GetComponent<TruckController>();
@@ -26,6 +27,7 @@ public class TriggerUpHill : MonoBehaviour
         }
     }
 
+    // switches animation to default by switching bool in blend tree to false
     void OnTriggerExit2D(Collider2D other)
     {
         TruckController cont = other.GetComponent<TruckController>();

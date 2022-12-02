@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Abstract class for player and NPC truck controller
 public abstract class TruckControllerImp
 {
     protected TruckController truck;

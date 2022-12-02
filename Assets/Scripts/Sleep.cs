@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Sleeps for sleepTime seconds and transitions to new scene after
 public class Sleep : MonoBehaviour
 {
 
